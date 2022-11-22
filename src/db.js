@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import pg from 'pg';
 import Invoice from './controller/Invoice.controller';
 import Car from './controller/Car.controller';
-import Product from './models/Product.model';
+import Product from './models/Product.model.js';
 dotenv.config();
 
 const { PGDATABASE, PGHOST, PGPASSWORD, PGPORT, PGUSER } = process.env;
