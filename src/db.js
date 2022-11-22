@@ -1,9 +1,12 @@
 import { Sequelize } from 'sequelize';
 import dotenv from 'dotenv';
 import pg from 'pg';
+
 import Invoice from './models/Invoice.mode.js';
 import Car from './models/Car.model.js';
-import Product from './models/Product.model.js';
+import Product from './models/Product.model';
+import Review from './models/Review.model';
+
 dotenv.config();
 
 const { PGDATABASE, PGHOST, PGPASSWORD, PGPORT, PGUSER } = process.env;
