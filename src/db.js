@@ -1,8 +1,8 @@
 import { Sequelize } from 'sequelize';
 import dotenv from 'dotenv';
 import pg from 'pg';
-import Invoice from './controller/Invoice.controller';
-import Car from './controller/Car.controller';
+import Invoice from './models/Invoice.mode.js';
+import Car from './models/Car.model.js';
 import Product from './models/Product.model.js';
 dotenv.config();
 
