@@ -16,8 +16,25 @@ const sequelize = new Sequelize(
     dialectModule: pg,
   }
 );
+
+User.hasOne(Car);
+Car.belongsTo(User);
+
+User.belongsToMany(Product, { through: "Products_User" });
+Product.belongsToMany(User, { through: "Products_User" });
+
+User.hasMany(Invoice);
+Invoice.belongsTo(User);
+
+User.hasMany(Review);
+Review.belongsTo(User);
+
+Product.hasMany(Review);
+Review.belongsTo(Product);
+
 Car.hasMany(Product);
 Product.belongsTo(Car);
+
 Invoice.hasOne(Car);
 Car.belongsTo(Invoice);
 
