@@ -17,10 +17,6 @@ export const getInvoice = async (req, res) => {
 export const postInvoice = async (req, res) => {
   const { invoice_total, invoice_shipping, invoice_amount } = req.body;
   try {
-    const allInvoice = await Invoice.findAll();
-    if (allInvoice.length === 0) {
-      return res.status(404).json({ msg: "Invoices not found" });
-    }
     const newInvoice = await Invoice.create({
       invoice_total,
       invoice_shipping,
