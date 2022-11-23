@@ -9,9 +9,9 @@ export const getUser = async (req, res) => {
             return res.json(user);
         };
         const userId = await User.findByPk(id);
-        return res.json(userId);
+        return res.status(200).json(userId);
     } catch (error) {
-        return res.status(500).json({ msg: error });
+        return res.status(404).json({ msg: error });
     };
 };
 
@@ -43,9 +43,9 @@ export const putUser = async (req, res) => {
                 },
             }
         );
-        res.status(204).json({ msg: 'The user was successfully updated' });
+        res.status(200).json({ msg: 'The user was successfully updated' });
     } catch (error) {
-        res.status(500).json({ msg: error });
+        res.status(404).json({ msg: error });
     };
 };
 
@@ -62,7 +62,7 @@ export const postUser = async (req, res) => {
     const users = await User.findAll();
     if (users.length === 0) {
       let allUsers = await User.bulkCreate(user);
-      return res.json({
+      return res.status(200).json({
         msg: 'User was created as succesfully',
         usersAll: allUsers,
       });
@@ -77,12 +77,12 @@ export const postUser = async (req, res) => {
             user_shipping_address,
             user_isAdmin
         });
-        res.status(201).json({
+        res.status(200).json({
             user: newUser,
             complete: 'User is created succesfully',
         });
     } catch (error) {
-        return res.status(500).json({ msg: error });
+        return res.status(404).json({ msg: error });
     }
 };
 
@@ -94,8 +94,8 @@ export const deleteUser = async (req, res) => {
                 user_id,
             },
         });
-        res.status(204).json({ msg: 'The user was deleted successfully' });
+        res.status(200).json({ msg: 'The user was deleted successfully' });
     } catch (error) {
-        res.status(500).json({ msg: error });
+        res.status(404).json({ msg: error });
     };
 };

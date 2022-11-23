@@ -7,9 +7,9 @@ import {
 } from '../controller/User.controller.js';
 
 const router = Router();
-router.get('/api/user/:id', getUser);
-router.put('/api/user/:id', putUser);
-router.delete('/api/user/:id', deleteUser);
-router.post('/api/user', postUser);
+router.get('/:id', getUser);
+router.put('/:id', putUser);
+router.delete('/:id', deleteUser);
+router.post('/', postUser);
 
 export default router;
