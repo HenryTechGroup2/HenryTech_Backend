@@ -23,14 +23,6 @@ const Review = sequelize.define('review', {
             max: 200
         }
     },
-    review_user_id: {
-        type: DataTypes.INTEGER,
-        references: {
-            model: User,
-            key: 'user_id'
-        },
-        allowNull: false,
-    },
     review_score: {
         type: DataTypes.INTEGER,
         allowNull: false,

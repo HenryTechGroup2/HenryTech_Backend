@@ -1,4 +1,4 @@
-import sequelize from "../db";
+import sequelize from "../db.js";
 import { DataTypes } from "sequelize";
 
 const User = sequelize.define("user", {
@@ -23,7 +23,7 @@ const User = sequelize.define("user", {
     type: DataTypes.INTEGER,
   },
   user_payment_method: {
-    type: DataTypes.ENUM([]),
+    type: DataTypes.ENUM('stripe'),
   },
   user_shipping_address: {
     type: DataTypes.STRING,

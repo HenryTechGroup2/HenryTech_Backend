@@ -1,7 +1,7 @@
 import sequelize from '../db.js';
 import { DataTypes } from 'sequelize';
 
-const Invoice = sequelize.define({
+const Invoice = sequelize.define('invoice', {
   invoice_id: {
     type: DataTypes.INTEGER,
     autoIncrement: true,
