@@ -38,13 +38,6 @@ const Product = sequelize.define(
       defaultValue: false,
       allowNull: false,
     },
-    product_stock: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        min: 0,
-      },
-    },
     product_rating: {
       type: DataTypes.INTEGER,
       allowNull: false,
