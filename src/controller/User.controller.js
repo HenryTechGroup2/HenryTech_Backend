@@ -59,6 +59,14 @@ export const postUser = async (req, res) => {
         user_shipping_address,
         user_isAdmin
     } = req.body;
+    const users = await User.findAll();
+    if (users.length === 0) {
+      let allUsers = await User.bulkCreate(user);
+      return res.json({
+        msg: 'User was created as succesfully',
+        usersAll: allUsers,
+      });
+    }
     try {
         const newUser = await User.create({
             user_email,
