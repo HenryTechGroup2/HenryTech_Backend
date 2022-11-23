@@ -1,13 +1,26 @@
 import { products } from '../../data/data.js';
 import Product from '../models/Product.model.js';
-
-export const getProduct = async (req, res) => {
-  const { id } = req.params;
+export const getProducts = async (req, res) => {
+  const { name } = req.query;
   try {
-    if (!id) {
+    if (!name) {
       const products = await Product.findAll();
       return res.json(products);
     }
+    const product = await Product.findOne({
+      where: {
+        product_name: name,
+      },
+    });
+    return res.json(product);
+  } catch (error) {
+    return res.status(500).json({ msg: error.message });
+  }
+};
+export const getProduct = async (req, res) => {
+  const { id } = req.params;
+  try {
+    if (!id) throw new Error(`Please insert id`);
     const product = await Product.findByPk(id);
     return res.json(product);
   } catch (error) {
