@@ -31,6 +31,9 @@ const Review = sequelize.define('review', {
             max: 5
         }
     }
-})
+},
+    {
+        timestamps: false,
+    });
 
 export default Review;

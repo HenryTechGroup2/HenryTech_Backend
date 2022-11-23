@@ -15,6 +15,9 @@ const Invoice = sequelize.define('invoice', {
     type: DataTypes.STRING,
     allowNull: false,
   },
-});
+},
+  {
+    timestamps: false,
+  });
 
 export default Invoice;

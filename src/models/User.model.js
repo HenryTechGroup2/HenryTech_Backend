@@ -31,6 +31,9 @@ const User = sequelize.define("user", {
   user_isAdmin: {
     type: DataTypes.BOOLEAN,
   },
-});
+},
+  {
+    timestamps: false,
+  });
 
 export default User;
