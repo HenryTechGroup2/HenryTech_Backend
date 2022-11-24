@@ -1,13 +1,18 @@
 import { user } from '../../data/data.js';
 import User from '../models/User.model.js';
 
+export const getAllUsers = async (req, res) => {
+    try {
+        const user = await User.findAll();
+        return res.json(user);
+    } catch (error) {
+        return res.status(404).json({ msg: error });
+    };
+};
+
 export const getUser = async (req, res) => {
     const { id } = req.params;
     try {
-        if (!id) {
-            const user = await User.findAll();
-            return res.json(user);
-        };
         const userId = await User.findByPk(id);
         return res.status(200).json(userId);
     } catch (error) {
