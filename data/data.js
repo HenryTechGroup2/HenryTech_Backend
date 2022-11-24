@@ -177,3 +177,20 @@ export const user = [
     user_isAdmin: true,
   }
 ];
+export const review = [
+  {
+    review_title: 'Mal estado',
+    review_body: 'El producto me llego todo roto XD',
+    review_score: '2',
+  },
+  {
+    review_title: 'Buen estado',
+    review_body: 'El producto me llego en buen estado',
+    review_score: '3',
+  },
+  {
+    review_title: 'Envio',
+    review_body: 'La compra me llogo super rapido y en perfecto estado',
+    review_score: '5',
+  }
+];
