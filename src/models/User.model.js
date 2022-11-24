@@ -6,6 +6,7 @@ const User = sequelize.define("user", {
     type: DataTypes.INTEGER,
     primaryKey: true,
     allowNull: false,
+    autoIncrement: true
   },
   user_email: {
     type: DataTypes.STRING,
@@ -20,7 +21,7 @@ const User = sequelize.define("user", {
     allowNull: false,
   },
   user_phone: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.BIGINT,
   },
   user_payment_method: {
     type: DataTypes.ENUM('stripe'),
