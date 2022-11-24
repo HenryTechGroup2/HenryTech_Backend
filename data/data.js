@@ -141,23 +141,21 @@ export const products = [
 ];
 export const user = [
   {
-    user_id: 1,
     user_name: 'Jonatan',
     user_email: 'jonatan@gmail.com',
     user_password: '12345678',
     user_phone: '2612112078',
-    user_payment_method: 'Stripe',
+    user_payment_method: 'stripe',
     user_shipping_addres: 'Ciudad de Mendoza, Lujan de Cuyo',
-    isAdming: false,
+    isAdmin: false,
   },
   {
-    user_id: 2,
     user_name: 'Huari',
     user_email: 'pateypazhuari@gmail.com',
     user_password: '12345678',
     user_phone: '3543657596',
-    user_payment_method: 'Stripe',
+    user_payment_method: 'stripe',
     user_shipping_addres: 'Ciudad de Cordoba, Unquillo',
-    isAdming: true,
+    isAdmin: true,
   },
 ];
