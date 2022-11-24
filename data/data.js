@@ -146,8 +146,8 @@ export const user = [
     user_password: '12345678',
     user_phone: '2612112078',
     user_payment_method: 'stripe',
-    user_shipping_addres: 'Ciudad de Mendoza, Lujan de Cuyo',
-    isAdmin: false,
+    user_shipping_address: 'Ciudad de Mendoza, Lujan de Cuyo',
+    user_isAdmin: false,
   },
   {
     user_name: 'Huari',
@@ -155,7 +155,25 @@ export const user = [
     user_password: '12345678',
     user_phone: '3543657596',
     user_payment_method: 'stripe',
-    user_shipping_addres: 'Ciudad de Cordoba, Unquillo',
-    isAdmin: true,
+    user_shipping_address: 'Ciudad de Cordoba, Unquillo',
+    user_isAdmin: true,
   },
+  {
+    user_name: 'Tobias',
+    user_email: 'tobiastka@gmail.com',
+    user_password: 'asdasdasv',
+    user_phone: '3543657596',
+    user_payment_method: 'stripe',
+    user_shipping_address: 'Calle siempre sucia, 123',
+    user_isAdmin: true,
+  },
+  {
+    user_name: 'Santiago',
+    user_email: 'santiequisde@gmail.com',
+    user_password: 'kahsvbdjasbdhj',
+    user_phone: '3543657596',
+    user_payment_method: 'stripe',
+    user_shipping_address: 'Calle peligrosa 24',
+    user_isAdmin: true,
+  }
 ];

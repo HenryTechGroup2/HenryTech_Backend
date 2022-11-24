@@ -1,4 +1,3 @@
-import { user } from '../../data/data.js';
 import User from '../models/User.model.js';
 
 export const getAllUsers = async (req, res) => {
@@ -21,7 +20,7 @@ export const getUser = async (req, res) => {
 };
 
 export const putUser = async (req, res) => {
-    const { user_id } = req.params;
+    const { id } = req.params;
     const {
         user_email,
         user_name,
@@ -32,6 +31,7 @@ export const putUser = async (req, res) => {
         user_isAdmin
     } = req.body;
     try {
+
         await User.update(
             {
                 user_email,
@@ -44,7 +44,7 @@ export const putUser = async (req, res) => {
             },
             {
                 where: {
-                    user_id,
+                    user_id: Number(id),
                 },
             }
         );
@@ -64,15 +64,9 @@ export const postUser = async (req, res) => {
         user_shipping_address,
         user_isAdmin
     } = req.body;
-    const users = await User.findAll();
-    if (users.length === 0) {
-      let allUsers = await User.bulkCreate(user);
-      return res.status(200).json({
-        msg: 'User was created as succesfully',
-        usersAll: allUsers,
-      });
-    }
+
     try {
+        console.log(req.body)
         const newUser = await User.create({
             user_email,
             user_name,
@@ -92,11 +86,11 @@ export const postUser = async (req, res) => {
 };
 
 export const deleteUser = async (req, res) => {
-    const { user_id } = req.params;
+    const { id } = req.params;
     try {
         await User.destroy({
             where: {
-                user_id,
+                user_id: id,
             },
         });
         res.status(200).json({ msg: 'The user was deleted successfully' });
