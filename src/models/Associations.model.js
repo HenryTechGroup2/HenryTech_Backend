@@ -31,8 +31,8 @@ export const Product_User = sequelize.define('favorite',
         timestamps: false
     })
 
-Product.hasOne(Stock, { foreignKey: 'stock_product_id' });
-Stock.belongsTo(Product, { foreignKey: 'stock_product_id' });
+Stock.hasOne(Product, { targetKey: 'product_id', foreignKey: 'stock_product_id' });
+Product.belongsTo(Stock, { sourceKey: 'product_id', foreignKey: 'stock_product_id' });
 
 Product.belongsToMany(Order, { through: Product_Order, foreignKey: 'product_order_productID' });
 Order.belongsToMany(Product, { through: Product_Order, foreignKey: 'product_order_orderID' });
