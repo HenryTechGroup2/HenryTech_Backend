@@ -15,8 +15,8 @@ const Stock = sequelize.define('stock', {
         }
     }
 },
-{
-    timestamps: false
-});
+    {
+        timestamps: false
+    });
 
 export default Stock;

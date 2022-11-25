@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { getOrder,putOrder, deleteOrder, postOrder } from '../controller/Order.controller.js';
+import { getOrder, putOrder, deleteOrder, postOrder } from '../controller/Order.controller.js';
 
 const router = Router();
 router.get('/:id', getOrder)

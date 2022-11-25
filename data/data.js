@@ -138,6 +138,77 @@ export const products = [
       'https://www.megatecnologia.com.ar/thumb/DISCO-HDD-1TB-BLUE-64MB1602275892065_800x800.jpg',
     product_array_img: [],
   },
+  {
+    product_name:
+      'Teclado Bluetooth Redragon Fizz Pro Argentina K616-rgb-ar Qwerty Red Español Color Celeste Y Blanco Con Luz Rgb',
+    product_description: '',
+    product_price: 12299,
+    product_ofer: false,
+    product_stock: 100,
+    product_rating: 4.8,
+    product_category: 'Teclados',
+    product_img: 'https://http2.mlstatic.com/D_NQ_NP_2X_709944-MLA51984562627_102022-F.webp',
+    product_array_img: [],
+  },
+  {
+    product_name:
+      'Teclado Mecánico Inalámbrico Redragon K621 Tkl Horus Red Rgb',
+    product_description: '',
+    product_price: 16499,
+    product_ofer: false,
+    product_stock: 2,
+    product_rating: 3.8,
+    product_category: 'Teclados',
+    product_img: 'https://http2.mlstatic.com/D_NQ_NP_602438-MLA51003441581_082022-V.webp',
+    product_array_img: [],
+  },
+  {
+    product_name:
+      'Teclado gamer Redragon Kumara K552 QWERTY Outemu Blue español latinoamérica color negro con luz RGB',
+    product_description: '',
+    product_price: 15000,
+    product_ofer: true,
+    product_stock: 0,
+    product_rating: 4.5,
+    product_category: 'Teclados',
+    product_img: 'https://http2.mlstatic.com/D_NQ_NP_811151-MLA52350593586_112022-V.webp',
+    product_array_img: [],
+  },
+  {
+    product_name:
+      'Nintendo Switch 32GB Standard color rojo neón, azul neón y negro',
+    product_description: 'Con tu consola Switch tendrás entretenimiento asegurado todos los días. Su tecnología fue creada para poner nuevos retos tanto a jugadores principiantes como expertos. Switch se convirtió en una de las consolas más versátiles del mercado gracias a su uso portátil y de sobremesa. Nintendo desarrolló este modelo con el objetivo de tener todas las comodidades de la tecnología de elite en un aparato portátil con el que podrás jugar y disfrutar de diverso contenido online. Nintendo Switch es una consola desmontable, que puede usarse en modo portátil, sobremesa o en la TV; esto te brindará la posibilidad de utilizarla donde quieras y compartir sus controles.',
+    product_price: 122999,
+    product_ofer: true,
+    product_stock: 20,
+    product_rating: 4.8,
+    product_category: 'Nindendo Wii',
+    product_img: 'https://http2.mlstatic.com/D_NQ_NP_2X_883371-MLA32731749246_112019-F.webp',
+    product_array_img: [
+      'https://http2.mlstatic.com/D_NQ_NP_2X_770676-MLA32731813622_112019-F.webp',
+      'https://http2.mlstatic.com/D_NQ_NP_2X_865283-MLA32731749270_112019-F.webp'
+    ],
+  },
+  {
+    product_name:
+      'Nintendo Switch Oled Pokemon Escarlata Purpura Ed.especial!',
+    product_description: 'Con tu consola Switch tendrás entretenimiento asegurado todos los días. Su tecnología fue creada para poner nuevos retos tanto a jugadores principiantes como expertos. Switch se convirtió en una de las consolas más versátiles del mercado gracias a su uso portátil y de sobremesa. Nintendo desarrolló este modelo con el objetivo de tener todas las comodidades de la tecnología de elite en un aparato portátil con el que podrás jugar y disfrutar de diverso contenido online. Nintendo Switch es una consola desmontable, que puede usarse en modo portátil, sobremesa o en la TV; esto te brindará la posibilidad de utilizarla donde quieras y compartir sus controles.',
+    product_price: 250000,
+    product_ofer: false,
+    product_stock: 5,
+    product_rating: 5,
+    product_category: 'Nindendo Wii',
+    product_img: 'https://http2.mlstatic.com/D_NQ_NP_682549-MLA52234711200_112022-O.webp',
+    product_array_img: [
+      'https://http2.mlstatic.com/D_NQ_NP_723077-MLA52234716184_112022-O.webp',
+      'https://http2.mlstatic.com/D_NQ_NP_705523-MLA52234510875_112022-O.webp',
+      'https://http2.mlstatic.com/D_NQ_NP_702609-MLA52234576581_112022-O.webp',
+      'https://http2.mlstatic.com/D_NQ_NP_787161-MLA52234570605_112022-O.webp',
+      'https://http2.mlstatic.com/D_NQ_NP_686940-MLA52234711202_112022-O.webp',
+      'https://http2.mlstatic.com/D_NQ_NP_834510-MLA52234745071_112022-O.webp',
+      'https://http2.mlstatic.com/D_NQ_NP_671129-MLA52234708212_112022-O.webp'
+    ],
+  },
 ];
 export const user = [
   {
@@ -146,8 +217,8 @@ export const user = [
     user_password: '12345678',
     user_phone: '2612112078',
     user_payment_method: 'stripe',
-    user_shipping_address: 'Ciudad de Mendoza, Lujan de Cuyo',
-    user_isAdmin: false,
+    user_shipping_address: 'Lujan de Cuyo, 300',
+    user_isAdmin: true,
   },
   {
     user_name: 'Huari',
@@ -155,7 +226,7 @@ export const user = [
     user_password: '12345678',
     user_phone: '3543657596',
     user_payment_method: 'stripe',
-    user_shipping_address: 'Ciudad de Cordoba, Unquillo',
+    user_shipping_address: 'Quebrachitos, 43',
     user_isAdmin: true,
   },
   {
@@ -164,17 +235,35 @@ export const user = [
     user_password: 'asdasdasv',
     user_phone: '3543657596',
     user_payment_method: 'stripe',
-    user_shipping_address: 'Calle siempre sucia, 123',
+    user_shipping_address: 'Santa Fe, 123',
+    user_isAdmin: true,
+  },
+  {
+    user_name: 'David',
+    user_email: 'davidcastillejo@gmail.com',
+    user_password: 'holasoydavid',
+    user_phone: '3543996722',
+    user_payment_method: 'stripe',
+    user_shipping_address: 'Av.San Martin, 4005',
+    user_isAdmin: true,
+  },
+  {
+    user_name: 'Laura',
+    user_email: 'lauravalencia@gmail.com',
+    user_password: '987654321',
+    user_phone: '3543474803',
+    user_payment_method: 'stripe',
+    user_shipping_address: 'Cordoba, 321',
     user_isAdmin: true,
   },
   {
     user_name: 'Santiago',
     user_email: 'santiequisde@gmail.com',
     user_password: 'kahsvbdjasbdhj',
-    user_phone: '3543657596',
+    user_phone: '3333333333',
     user_payment_method: 'stripe',
     user_shipping_address: 'Calle peligrosa 24',
-    user_isAdmin: true,
+    user_isAdmin: false,
   }
 ];
 export const review = [
@@ -192,5 +281,19 @@ export const review = [
     review_title: 'Envio',
     review_body: 'La compra me llogo super rapido y en perfecto estado',
     review_score: '5',
+  }
+];
+export const invoice = [
+  {
+    invoice_amount: '20.000,80',
+    invoice_shipping: 'Mercado Pago',
+  },
+  {
+    invoice_amount: '2000',
+    invoice_shipping: 'Visa',
+  },
+  {
+    invoice_amount: '1.000.000,50',
+    invoice_shipping: 'Mastercard',
   }
 ];
