@@ -40,18 +40,18 @@ Order.belongsToMany(Product, { through: Product_Order, foreignKey: 'product_orde
 Product.hasMany(Review, { foreignKey: 'review_product_id' });
 Review.belongsTo(Product, { foreignKey: 'review_product_id' });
 
-Product.belongsToMany(User, {through: Product_User, foreignKey: 'favorite_product_id'});
-User.belongsToMany(Product,{through:Product_User, foreignKey: 'favorite_user_id'});
+Product.belongsToMany(User, { through: Product_User, foreignKey: 'favorite_product_id' });
+User.belongsToMany(Product, { through: Product_User, foreignKey: 'favorite_user_id' });
 
-User.hasMany(Review, { foreignKey: 'review_user_id'});
-Review.belongsTo(User, {foreignKey: 'review_user_id'});
+User.hasMany(Review, { foreignKey: 'review_user_id' });
+Review.belongsTo(User, { foreignKey: 'review_user_id' });
 
 User.hasMany(Order, { foreignKey: 'order_user_id' });
-Order.belongsTo(User, {foreignKey: 'order_user_id'});
+Order.belongsTo(User, { foreignKey: 'order_user_id' });
 
 User.hasMany(Invoice, { foreignKey: 'invoice_user_id' });
 Invoice.belongsTo(User, { foreignKey: 'invoice_user_id' });
 
 Order.hasOne(Invoice, { foreignKey: 'invoice_order_id' });
-Invoice.belongsTo(Order,{foreignKey: 'invoice_order_id'});
+Invoice.belongsTo(Order, { foreignKey: 'invoice_order_id' });
 
