@@ -22,14 +22,7 @@ export const Product_Order = sequelize.define('product_order',
         timestamps: false
     });
 
-
-export const Product_User = sequelize.define('favorite',
-    {
-
-    },
-    {
-        timestamps: false
-    })
+export const Product_User = sequelize.define('favorite',{} , { timestamps: false })
 
 Stock.hasOne(Product, { targetKey: 'product_id', foreignKey: 'stock_product_id' });
 Product.belongsTo(Stock, { sourceKey: 'product_id', foreignKey: 'stock_product_id' });
