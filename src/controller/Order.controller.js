@@ -1,11 +1,32 @@
 import Order from '../models/Order.model.js';
 
-export const getAllOrder = async (req, res) => {
+export const getOrder = async (req, res) => {
+    const { id } = req.params;
     try {
-        const order = await Order.findAll();
-        return res.status(200).json(order);
+        const orderId = await Order.findByPk(id);
+        return res.status(200).json(orderId);
     } catch (error) {
         return res.status(404).json({ msg: error });
+    };
+};
+
+export const putOrder = async (req, res) => {
+    const { id } = req.params;
+    const { order_status } = req.body;
+    try {
+        await Order.update(
+            {
+                order_status
+            },
+            {
+                where: {
+                    order_id: Number(id),
+                },
+            }
+        );
+        res.status(200).json({ msg: 'The order was successfully updated' });
+    } catch (error) {
+        res.status(404).json({ msg: error });
     };
 };
 
