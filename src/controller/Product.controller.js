@@ -1,4 +1,3 @@
-import { products } from '../../data/data.js';
 import Product from '../models/Product.model.js';
 import { Op } from 'sequelize';
 export const getProducts = async (req, res) => {
@@ -23,9 +22,8 @@ export const getProducts = async (req, res) => {
 export const getProduct = async (req, res) => {
   const { id } = req.params;
   try {
-    if (!id) throw new Error(`Please insert id`);
     const product = await Product.findByPk(id);
-    return res.json(product);
+    return res.status(200).json(product);
   } catch (error) {
     return res.status(500).json({ msg: error });
   }
@@ -90,7 +88,7 @@ export const putProduct = async (req, res) => {
       },
       {
         where: {
-          product_id:id,
+          product_id: id,
         },
       }
     );
@@ -104,7 +102,7 @@ export const deleteProduct = async (req, res) => {
   try {
     await Product.destroy({
       where: {
-        product_id:id,
+        product_id: id,
       },
     });
     res.status(200).json({ msg: 'The product was deleted successfully' });
