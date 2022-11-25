@@ -1,10 +1,11 @@
 import Product from '../models/Product.model.js';
 import { Op } from 'sequelize';
+import Stock from '../models/Stock.model.js';
 export const getProducts = async (req, res) => {
   const { name } = req.query;
   try {
     if (!name) {
-      const products = await Product.findAll();
+      const products = await Product.findAll({include: Stock});
       return res.json(products);
     }
     const product = await Product.findAll({
@@ -22,7 +23,7 @@ export const getProducts = async (req, res) => {
 export const getProduct = async (req, res) => {
   const { id } = req.params;
   try {
-    const product = await Product.findByPk(id);
+    const product = await Product.findByPk(id, {include: Stock});
     return res.status(200).json(product);
   } catch (error) {
     return res.status(500).json({ msg: error });
