@@ -1,8 +1,14 @@
+import Product from '../models/Product.model.js';
 import User from '../models/User.model.js';
-
 export const getAllUsers = async (req, res) => {
     try {
-        const user = await User.findAll();
+        const user = await User.findAll({
+            include: {
+                model: Product,
+                as: 'user_favorites',
+                attributes: ['product_id', 'product_name', 'product_description', 'product_price', 'product_rating', 'product_img', 'product_stock_id']
+            }
+        });
         return res.json(user);
     } catch (error) {
         return res.status(404).json({ msg: error });
@@ -12,7 +18,13 @@ export const getAllUsers = async (req, res) => {
 export const getUser = async (req, res) => {
     const { id } = req.params;
     try {
-        const userId = await User.findByPk(id);
+        const userId = await User.findByPk(id, {
+            include: {
+                model: Product,
+                as: 'user_favorites',
+                attributes: ['product_id', 'product_name', 'product_description', 'product_price', 'product_rating', 'product_img', 'product_stock_id']
+            }
+        });
         return res.status(200).json(userId);
     } catch (error) {
         return res.status(404).json({ msg: error });

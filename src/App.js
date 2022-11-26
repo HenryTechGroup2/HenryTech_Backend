@@ -5,6 +5,7 @@ import routerStock from './routes/Stock.routes.js';
 import routerOrder from './routes/Order.routes.js';
 import routerReview from './routes/Review.routes.js';
 import routerInvoice from './routes/Invoice.routes.js';
+import routerFavorites from './routes/Favorite.routes.js';
 import cors from 'cors';
 import morgan from 'morgan';
 
@@ -17,6 +18,7 @@ app.use('/api/user', routerUser);
 app.use('/api/stock', routerStock);
 app.use('/api/order', routerOrder);
 app.use('/api/review', routerReview);
-app.use('/invoice', routerInvoice);
+app.use('/api/invoice', routerInvoice);
+app.use('/api/favorite', routerFavorites);
 
 export default app;
