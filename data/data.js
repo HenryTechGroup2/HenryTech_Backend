@@ -1,54 +1,54 @@
 export const stock = [
   {
-    sotck_amount: '50'
+    stock_amount: '50'
   },
   {
-    sotck_amount: '65'
+    stock_amount: '65'
   },
   {
-    sotck_amount: '60'
+    stock_amount: '60'
   },
   {
-    sotck_amount: '11'
+    stock_amount: '11'
   },
   {
-    sotck_amount: '22'
+    stock_amount: '22'
   },
   {
-    sotck_amount: '23'
+    stock_amount: '23'
   },
   {
-    sotck_amount: '8'
+    stock_amount: '8'
   },
   {
-    sotck_amount: '100'
+    stock_amount: '100'
   },
   {
-    sotck_amount: '520'
+    stock_amount: '520'
   },
   {
-    sotck_amount: '22'
+    stock_amount: '22'
   },
   {
-    sotck_amount: '33'
+    stock_amount: '33'
   },
   {
-    sotck_amount: '11'
+    stock_amount: '11'
   },
   {
-    sotck_amount: '22'
+    stock_amount: '22'
   },
   {
-    sotck_amount: '47'
+    stock_amount: '47'
   },
   {
-    sotck_amount: '0'
+    stock_amount: '0'
   },
   {
-    sotck_amount: '5'
+    stock_amount: '5'
   },
   {
-    sotck_amount: '0'
+    stock_amount: '0'
   },
 ];
 export const products = [
