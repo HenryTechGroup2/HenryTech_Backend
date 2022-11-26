@@ -1,16 +1,19 @@
-import { products } from '../../data/data.js';
 import Product from '../models/Product.model.js';
+import { Op } from 'sequelize';
+import Stock from '../models/Stock.model.js';
 export const getProducts = async (req, res) => {
   const { name } = req.query;
   try {
     if (!name) {
-      const products = await Product.findAll();
+      const products = await Product.findAll({include: Stock});
       return res.json(products);
     }
-    const product = await Product.findOne({
+    const product = await Product.findAll({
       where: {
-        product_name: name,
-      },
+        product_name: {
+          [Op.iLike]: `%${name}%`
+        }
+      }
     });
     return res.json(product);
   } catch (error) {
@@ -20,9 +23,8 @@ export const getProducts = async (req, res) => {
 export const getProduct = async (req, res) => {
   const { id } = req.params;
   try {
-    if (!id) throw new Error(`Please insert id`);
-    const product = await Product.findByPk(id);
-    return res.json(product);
+    const product = await Product.findByPk(id, {include: Stock});
+    return res.status(200).json(product);
   } catch (error) {
     return res.status(500).json({ msg: error });
   }
@@ -40,14 +42,6 @@ export const postProduct = async (req, res) => {
     product_array_img,
   } = req.body;
   try {
-    const allProduct = await Product.findAll();
-    if (allProduct.length === 0) {
-      let allProducts = await Product.bulkCreate(products);
-      return res.json({
-        msg: 'Products all created was as succesfully',
-        productAll: allProducts,
-      });
-    }
     const newProduct = await Product.create({
       product_name,
       product_description,
@@ -68,7 +62,7 @@ export const postProduct = async (req, res) => {
   }
 };
 export const putProduct = async (req, res) => {
-  const { product_id } = req.params;
+  const { id } = req.params;
   const {
     product_name,
     product_description,
@@ -95,7 +89,7 @@ export const putProduct = async (req, res) => {
       },
       {
         where: {
-          product_id,
+          product_id: id,
         },
       }
     );
@@ -105,14 +99,14 @@ export const putProduct = async (req, res) => {
   }
 };
 export const deleteProduct = async (req, res) => {
-  const { product_id } = req.params;
+  const { id } = req.params;
   try {
     await Product.destroy({
       where: {
-        product_id,
+        product_id: id,
       },
     });
-    res.status(204).json({ msg: 'The product was deleted successfully' });
+    res.status(200).json({ msg: 'The product was deleted successfully' });
   } catch (error) {
     res.status(500).json({ msg: error });
   }
