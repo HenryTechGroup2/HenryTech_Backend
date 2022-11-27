@@ -1,19 +1,19 @@
-import app from './App.js';
-import Order from './models/Order.model.js';
-import Invoice from './models/Invoice.model.js';
-import Product from './models/Product.model.js';
-import User from './models/User.model.js';
-import Review from './models/Review.model.js';
-import Stock from "./models/Stock.model.js"
-import { Product_Order } from './models/Associations.model.js';
-import sequelize from './db.js';
+import app from './src/App.js';
+import Order from './src/models/Order.model.js';
+import Invoice from './src/models/Invoice.model.js';
+import Product from './src/models/Product.model.js';
+import User from './src/models/User.model.js';
+import Review from './src/models/Review.model.js';
+import Stock from "./src/models/Stock.model.js"
+import { Product_Order } from './src/models/Associations.model.js';
+import sequelize from './src/db.js';
 import { 
   user as userInitialData, 
   products as productInitialData, 
   stock as stockInitialData, 
   review as reviewInitialData, 
   invoice as invoiceInitialData
-} from '../data/data.js';
+} from './data/data.js';
 
 const port = 3001;
 
