@@ -9,7 +9,6 @@ export const newFavorite = async (req, res) => {
         userDB.addUser_favorite(productDB);
         res.status(200).json({ msg: "User is created favorite succesfully" })
     } catch (error) {
-        console.log(error);
         res.status(404).json({ msg: error });
     }
 }
