@@ -1,54 +1,54 @@
 export const stock = [
   {
-    sotck_amount: '50'
+    stock_amount: 50,
   },
   {
-    sotck_amount: '65'
+    stock_amount: 65,
   },
   {
-    sotck_amount: '60'
+    stock_amount: 60,
   },
   {
-    sotck_amount: '11'
+    stock_amount: 11,
   },
   {
-    sotck_amount: '22'
+    stock_amount: 22,
   },
   {
-    sotck_amount: '23'
+    stock_amount: 23,
   },
   {
-    sotck_amount: '8'
+    stock_amount: 8,
   },
   {
-    sotck_amount: '100'
+    stock_amount: 100,
   },
   {
-    sotck_amount: '520'
+    stock_amount: 520,
   },
   {
-    sotck_amount: '22'
+    stock_amount: 22,
   },
   {
-    sotck_amount: '33'
+    stock_amount: 33,
   },
   {
-    sotck_amount: '11'
+    stock_amount: 11,
   },
   {
-    sotck_amount: '22'
+    stock_amount: 22,
   },
   {
-    sotck_amount: '47'
+    stock_amount: 47,
   },
   {
-    sotck_amount: '0'
+    stock_amount: 0,
   },
   {
-    sotck_amount: '5'
+    stock_amount: 5,
   },
   {
-    sotck_amount: '0'
+    stock_amount: 0,
   },
 ];
 export const products = [
@@ -75,7 +75,7 @@ export const products = [
       'https://www.megatecnologia.com.ar/images/476-PROCESADOR-INTEL-CORE-I7-10700K-5-10GHZ-10-GEN15969436923261621431438367.jpg',
     product_array_img: [],
   },
-  { 
+  {
     stock_product_id: 3,
     product_name: 'Placa De VÍdeo Amd Radeon Asus Dual Rx 6750 Xt 12gb',
     product_description: 'Placa de Video',
@@ -200,7 +200,8 @@ export const products = [
     product_ofer: false,
     product_rating: 4.8,
     product_category: 'Teclados',
-    product_img: 'https://http2.mlstatic.com/D_NQ_NP_2X_709944-MLA51984562627_102022-F.webp',
+    product_img:
+      'https://http2.mlstatic.com/D_NQ_NP_2X_709944-MLA51984562627_102022-F.webp',
     product_array_img: [],
   },
   {
@@ -212,7 +213,8 @@ export const products = [
     product_ofer: false,
     product_rating: 3.8,
     product_category: 'Teclados',
-    product_img: 'https://http2.mlstatic.com/D_NQ_NP_602438-MLA51003441581_082022-V.webp',
+    product_img:
+      'https://http2.mlstatic.com/D_NQ_NP_602438-MLA51003441581_082022-V.webp',
     product_array_img: [],
   },
   {
@@ -224,34 +226,38 @@ export const products = [
     product_ofer: true,
     product_rating: 4.5,
     product_category: 'Teclados',
-    product_img: 'https://http2.mlstatic.com/D_NQ_NP_811151-MLA52350593586_112022-V.webp',
+    product_img:
+      'https://http2.mlstatic.com/D_NQ_NP_811151-MLA52350593586_112022-V.webp',
     product_array_img: [],
   },
   {
     stock_product_id: 16,
     product_name:
       'Nintendo Switch 32GB Standard color rojo neón, azul neón y negro',
-    product_description: 'Con tu consola Switch tendrás entretenimiento asegurado todos los días. Su tecnología fue creada para poner nuevos retos tanto a jugadores principiantes como expertos. Switch se convirtió en una de las consolas más versátiles del mercado gracias a su uso portátil y de sobremesa. Nintendo desarrolló este modelo con el objetivo de tener todas las comodidades de la tecnología de elite en un aparato portátil con el que podrás jugar y disfrutar de diverso contenido online. Nintendo Switch es una consola desmontable, que puede usarse en modo portátil, sobremesa o en la TV; esto te brindará la posibilidad de utilizarla donde quieras y compartir sus controles.',
+    product_description:
+      'Con tu consola Switch tendrás entretenimiento asegurado todos los días. Su tecnología fue creada para poner nuevos retos tanto a jugadores principiantes como expertos. Switch se convirtió en una de las consolas más versátiles del mercado gracias a su uso portátil y de sobremesa. Nintendo desarrolló este modelo con el objetivo de tener todas las comodidades de la tecnología de elite en un aparato portátil con el que podrás jugar y disfrutar de diverso contenido online. Nintendo Switch es una consola desmontable, que puede usarse en modo portátil, sobremesa o en la TV; esto te brindará la posibilidad de utilizarla donde quieras y compartir sus controles.',
     product_price: 122999,
     product_ofer: true,
     product_rating: 4.8,
     product_category: 'Nindendo Wii',
-    product_img: 'https://http2.mlstatic.com/D_NQ_NP_2X_883371-MLA32731749246_112019-F.webp',
+    product_img:
+      'https://http2.mlstatic.com/D_NQ_NP_2X_883371-MLA32731749246_112019-F.webp',
     product_array_img: [
       'https://http2.mlstatic.com/D_NQ_NP_2X_770676-MLA32731813622_112019-F.webp',
-      'https://http2.mlstatic.com/D_NQ_NP_2X_865283-MLA32731749270_112019-F.webp'
+      'https://http2.mlstatic.com/D_NQ_NP_2X_865283-MLA32731749270_112019-F.webp',
     ],
   },
   {
     stock_product_id: 17,
-    product_name:
-      'Nintendo Switch Oled Pokemon Escarlata Purpura Ed.especial!',
-    product_description: 'Con tu consola Switch tendrás entretenimiento asegurado todos los días. Su tecnología fue creada para poner nuevos retos tanto a jugadores principiantes como expertos. Switch se convirtió en una de las consolas más versátiles del mercado gracias a su uso portátil y de sobremesa. Nintendo desarrolló este modelo con el objetivo de tener todas las comodidades de la tecnología de elite en un aparato portátil con el que podrás jugar y disfrutar de diverso contenido online. Nintendo Switch es una consola desmontable, que puede usarse en modo portátil, sobremesa o en la TV; esto te brindará la posibilidad de utilizarla donde quieras y compartir sus controles.',
+    product_name: 'Nintendo Switch Oled Pokemon Escarlata Purpura Ed.especial!',
+    product_description:
+      'Con tu consola Switch tendrás entretenimiento asegurado todos los días. Su tecnología fue creada para poner nuevos retos tanto a jugadores principiantes como expertos. Switch se convirtió en una de las consolas más versátiles del mercado gracias a su uso portátil y de sobremesa. Nintendo desarrolló este modelo con el objetivo de tener todas las comodidades de la tecnología de elite en un aparato portátil con el que podrás jugar y disfrutar de diverso contenido online. Nintendo Switch es una consola desmontable, que puede usarse en modo portátil, sobremesa o en la TV; esto te brindará la posibilidad de utilizarla donde quieras y compartir sus controles.',
     product_price: 250000,
     product_ofer: false,
     product_rating: 5,
     product_category: 'Nindendo Wii',
-    product_img: 'https://http2.mlstatic.com/D_NQ_NP_682549-MLA52234711200_112022-O.webp',
+    product_img:
+      'https://http2.mlstatic.com/D_NQ_NP_682549-MLA52234711200_112022-O.webp',
     product_array_img: [
       'https://http2.mlstatic.com/D_NQ_NP_723077-MLA52234716184_112022-O.webp',
       'https://http2.mlstatic.com/D_NQ_NP_705523-MLA52234510875_112022-O.webp',
@@ -259,7 +265,7 @@ export const products = [
       'https://http2.mlstatic.com/D_NQ_NP_787161-MLA52234570605_112022-O.webp',
       'https://http2.mlstatic.com/D_NQ_NP_686940-MLA52234711202_112022-O.webp',
       'https://http2.mlstatic.com/D_NQ_NP_834510-MLA52234745071_112022-O.webp',
-      'https://http2.mlstatic.com/D_NQ_NP_671129-MLA52234708212_112022-O.webp'
+      'https://http2.mlstatic.com/D_NQ_NP_671129-MLA52234708212_112022-O.webp',
     ],
   },
 ];
@@ -317,7 +323,7 @@ export const user = [
     user_payment_method: 'stripe',
     user_shipping_address: 'Calle peligrosa 24',
     user_isAdmin: false,
-  }
+  },
 ];
 export const review = [
   {
@@ -334,7 +340,7 @@ export const review = [
     review_title: 'Envio',
     review_body: 'La compra me llogo super rapido y en perfecto estado',
     review_score: '5',
-  }
+  },
 ];
 export const invoice = [
   {
@@ -348,5 +354,5 @@ export const invoice = [
   {
     invoice_amount: '1000000.50',
     invoice_shipping: 'Mastercard',
-  }
+  },
 ];
