@@ -3,6 +3,6 @@ import { newFavorite } from "../controller/Favorite.controller.js";
 
 const router = Router();
 
-router.post("/:idUser/:idProduct", newFavorite);
+router.post("/", newFavorite);
 
 export default router;
