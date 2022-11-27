@@ -563,12 +563,7 @@ export const products = [
     product_price: 4099,
     product_ofer: false,
     product_rating: 1,
-    product_category: [
-      'Teclado',
-      'Mouse',
-      'Mousepad',
-      'Auricular'
-    ],
+    product_category: 'Teclado',
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669507036/Combos/D_NQ_NP_2X_765907-MLA49647841060_042022-F_fdwfun.webp',
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669507042/Combos/D_NQ_NP_2X_782043-MLA49647798300_042022-F_kauqp0.webp',
