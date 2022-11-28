@@ -15,7 +15,6 @@ import {
   invoice as invoiceInitialData,
 } from './data/data.js';
 
-const port = 3002;
 async function DB_StartingData() {
   const users = await User.findAll();
   if (users.length === 0) {
@@ -51,8 +50,8 @@ async function DB_StartingData() {
 async function main() {
   try {
     await sequelize.sync({ force: true });
-    app.listen(port);
-    console.log(`listening on port ${port}`);
+    app.listen(3001);
+    console.log(`listening on port 3001`);
     DB_StartingData();
   } catch (e) {
     console.log('error', e);
