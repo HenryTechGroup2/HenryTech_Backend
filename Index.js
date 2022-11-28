@@ -17,44 +17,44 @@ import {
 
 const port = 3001;
 
-async function DB_StartingData() {
-  const users = await User.findAll();
-  if (users.length === 0) {
-    let allUsers = await User.bulkCreate(userInitialData);
-    console.log("initial users created successfully");
-  }
+// async function DB_StartingData() {
+//   const users = await User.findAll();
+//   if (users.length === 0) {
+//     let allUsers = await User.bulkCreate(userInitialData);
+//     console.log("initial users created successfully");
+//   }
 
-  const allStock = await Stock.findAll();
-  if (allStock.length === 0) {
-    let allStocks = await Stock.bulkCreate(stockInitialData);
-    console.log("initial stocks created successfully");
-  }
+//   const allStock = await Stock.findAll();
+//   if (allStock.length === 0) {
+//     let allStocks = await Stock.bulkCreate(stockInitialData);
+//     console.log("initial stocks created successfully");
+//   }
 
-  const allProduct = await Product.findAll();
-  if (allProduct.length === 0) {
-    let allProducts = await Product.bulkCreate(productInitialData);
-    console.log("initial products created successfully");
-  }
+//   const allProduct = await Product.findAll();
+//   if (allProduct.length === 0) {
+//     let allProducts = await Product.bulkCreate(productInitialData);
+//     console.log("initial products created successfully");
+//   }
 
-  const allReview = await Review.findAll();
-  if (allReview.length === 0) {
-    let allReviews = await Review.bulkCreate(reviewInitialData);
-    console.log("initial reviews created successfully");
-  }
+//   const allReview = await Review.findAll();
+//   if (allReview.length === 0) {
+//     let allReviews = await Review.bulkCreate(reviewInitialData);
+//     console.log("initial reviews created successfully");
+//   }
 
-  const allInvoice = await Invoice.findAll();
-  if (allInvoice.length === 0) {
-    let allInvoices = await Invoice.bulkCreate(invoiceInitialData);
-    console.log("initial invoices created successfully");
-  }
-}
+//   const allInvoice = await Invoice.findAll();
+//   if (allInvoice.length === 0) {
+//     let allInvoices = await Invoice.bulkCreate(invoiceInitialData);
+//     console.log("initial invoices created successfully");
+//   }
+// }
 
 async function main() {
   try {
     await sequelize.sync({ force: true });
     app.listen(port);
     console.log(`listening on port ${port}`);
-    DB_StartingData();
+    // await DB_StartingData();
   } catch (e) {
     console.log('error', e);
   }
