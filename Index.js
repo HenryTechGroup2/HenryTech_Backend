@@ -52,10 +52,11 @@ async function main() {
     await sequelize.sync({ force: true });
     app.listen(3001);
     console.log(`listening on port 3001`);
-    DB_StartingData();
+   
   } catch (e) {
     console.log('error', e);
   }
 }
 
 main();
+ DB_StartingData();
