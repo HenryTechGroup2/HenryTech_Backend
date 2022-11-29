@@ -1,34 +1,49 @@
 import Product from '../models/Product.model.js';
 import { Op } from 'sequelize';
 import Stock from '../models/Stock.model.js';
+
+const filterProductNulls = (product) => {
+  const productWithoutNull = {};
+  Object.keys(product.dataValues).forEach((key) => {
+    if (product[key] !== null) productWithoutNull[key] = product[key]
+  });
+  return { ...productWithoutNull }
+}
+
+
 export const getProducts = async (req, res) => {
   const { name } = req.query;
   try {
     if (!name) {
       const products = await Product.findAll({ include: Stock });
-      return res.json(products);
+      const filteredProducts = products.map((product) => { return filterProductNulls(product) });
+      return res.json(filteredProducts);
     }
-    const product = await Product.findAll({
+    const products = await Product.findAll({
       where: {
         product_name: {
           [Op.iLike]: `%${name}%`
         }
       }
     });
-    return res.json(product);
+    const filteredProducts = products.map((product) => { return filterProductNulls(product) });
+    return res.json(filteredProducts);
   } catch (error) {
     return res.status(500).json({ msg: error.message });
   }
 };
+
 export const getProduct = async (req, res) => {
   const { id } = req.params;
   try {
     const product = await Product.findByPk(id, { include: Stock });
-    return res.status(200).json(product);
+    const filteredProduct = filterProductNulls(product);
+    return res.status(200).json(filteredProduct);
   } catch (error) {
     return res.status(500).json({ msg: error });
   }
 };
+
 export const postProduct = async (req, res) => {
   const {
     product_name,
