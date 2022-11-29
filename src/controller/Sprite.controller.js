@@ -13,7 +13,7 @@ export const postStripe = async (req, res) => {
         payment_method: id,
         confirm: true,
       });
-      res.json({ message: 'Succesfull paymentd' });
+      res.json({ message: 'Succesfull payment', payment });
     } catch (error) {
       res.json({ message: error.raw.message });
     }
