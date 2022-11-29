@@ -2,7 +2,7 @@ import Stripe from 'stripe';
 const stripe = new Stripe(
     'sk_test_51M77H2KiwPMfuM1Y8CEJUzIE5eoefq6EHn7NyiAcbHMcvlw7lW8jWWU8kJXhlY3CLt5shjoBJZ5Fc1WttpqFciv700FRQy0OTQ'
 );
-export const getStripe = async (req, res) => {
+export const postStripe = async (req, res) => {
     const { id, amount } = req.body;
     const amountTotal = amount.reduce((a, b) => a + (b.product_price * b.product_count), 0);
     try {
