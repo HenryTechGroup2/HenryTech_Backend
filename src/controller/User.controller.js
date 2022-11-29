@@ -133,6 +133,10 @@ export const loginUser = async (req, res) => {
       where: {
         user_email,
       },
+      include: {
+        model: Product,
+        as: 'user_favorites',
+      }
     });
     if (!user) throw new Error('User or password incorrect');
     if (user.user_password === user_password) {
