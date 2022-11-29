@@ -20,15 +20,15 @@ const Product = sequelize.define(
     },
     product_brand: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     product_serie: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     product_model: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     product_description: {
       type: DataTypes.TEXT,

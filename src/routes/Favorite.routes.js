@@ -1,8 +1,9 @@
 import { Router } from "express";
-import { newFavorite } from "../controller/Favorite.controller.js";
+import { addFavorite, removeFavorite } from "../controller/Favorite.controller.js";
 
 const router = Router();
 
-router.post("/", newFavorite);
+router.post("/", addFavorite);
+router.delete("/", removeFavorite);
 
 export default router;
