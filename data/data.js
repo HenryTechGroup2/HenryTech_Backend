@@ -103,7 +103,8 @@ export const products = [
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669501044/Procesadores/D_NQ_NP_2X_818229-MLA51243374263_082022-F_nk7gbm.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669501060/Procesadores/D_NQ_NP_2X_825320-MLA51243313814_082022-F_bvqge9.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 2,
@@ -118,7 +119,9 @@ export const products = [
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669501886/Procesadores/D_NQ_NP_2X_662985-MLA51325304037_082022-F_tit2fl.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669501911/Procesadores/D_NQ_NP_2X_720792-MLA51325230530_082022-F_dbmh6h.webp'
-    ]
+    ],
+    product_views: 0
+    
   },
   {
     product_stock_id: 3,
@@ -134,7 +137,8 @@ export const products = [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669508001/GPU/D_NQ_NP_2X_950375-MLA48655931110_122021-F_ejx4w0.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669508008/GPU/D_NQ_NP_2X_954658-MLA48655931112_122021-F_e5phif.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669508014/GPU/D_NQ_NP_2X_789466-MLA48655743816_122021-F_utfdsq.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 4,
@@ -150,7 +154,8 @@ export const products = [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669508243/GPU/D_NQ_NP_2X_796349-MLA48741299924_012022-F_twvjtj.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669508254/GPU/D_NQ_NP_2X_743066-MLA48741313804_012022-F_yl8zze.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669508259/GPU/D_NQ_NP_2X_642927-MLA52593986674_112022-F_v0bhee.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 5,
@@ -163,7 +168,8 @@ export const products = [
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669596471/Fuente/D_NQ_NP_2X_653647-MLA51838551209_102022-F_wiwmyg.webp',
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669596478/Fuente/D_NQ_NP_2X_917104-MLA51838551212_102022-F_ibsafb.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 6,
@@ -180,7 +186,8 @@ export const products = [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669596560/Fuente/D_NQ_NP_2X_723996-MLA46800460535_072021-F_pj9w7r.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669596567/Fuente/D_NQ_NP_2X_617355-MLA46800346970_072021-F_xoiync.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669596578/Fuente/D_NQ_NP_2X_877206-MLA46800385512_072021-F_iejh67.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 7,
@@ -195,7 +202,8 @@ export const products = [
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669596878/Ram/D_NQ_NP_2X_896201-MLA48049389816_102021-F_fhvtbg.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669596884/Ram/D_NQ_NP_2X_735949-MLA48049398822_102021-F_a8aavo.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 8,
@@ -210,7 +218,8 @@ export const products = [
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669597018/Ram/D_NQ_NP_2X_623460-MLA51026152228_082022-F_fglr35.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669597024/Ram/D_NQ_NP_2X_857889-MLA51026112502_082022-F_oz54ay.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 9,
@@ -227,7 +236,8 @@ export const products = [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669597230/Motherboard/D_NQ_NP_2X_689433-MLA50788871751_072022-F_zhuyyw.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669597235/Motherboard/D_NQ_NP_2X_868701-MLA50789016254_072022-F_aa5hdz.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669597244/Motherboard/D_NQ_NP_2X_791942-MLA50788887675_072022-F_klvouh.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 10,
@@ -245,7 +255,8 @@ export const products = [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669598171/Motherboard/D_NQ_NP_2X_852942-MLA46726246989_072021-F_yxiffs.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669598178/Motherboard/D_NQ_NP_2X_961378-MLA46726281781_072021-F_nvdnkf.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669598189/Motherboard/D_NQ_NP_2X_856561-MLA46726549658_072021-F_mgcdjn.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 11,
@@ -259,7 +270,8 @@ export const products = [
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669598398/Almacenamiento/D_NQ_NP_2X_716125-MLA46222272568_052021-F_tq4ck4.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669598405/Almacenamiento/D_NQ_NP_2X_634018-MLA46222272569_052021-F_h5rsqq.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 12,
@@ -274,7 +286,8 @@ export const products = [
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669598537/Almacenamiento/D_NQ_NP_2X_712939-MLA51801197263_102022-F_p82das.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669598545/Almacenamiento/D_NQ_NP_2X_798931-MLA48157392118_112021-F_uo6qfa.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 13,
@@ -289,7 +302,8 @@ export const products = [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669598667/Teclados/D_NQ_NP_2X_910752-MLA51984578586_102022-F_bseq8m.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669598673/Teclados/D_NQ_NP_2X_820718-MLA51984561652_102022-F_inmmcf.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669598679/Teclados/D_NQ_NP_2X_853331-MLA51984529804_102022-F_vdovcl.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 14,
@@ -306,7 +320,8 @@ export const products = [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669598903/Teclados/D_NQ_NP_2X_722962-MLA51003425658_082022-F_ors2pi.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669598921/Teclados/D_Q_NP_923809-MLA51003601111_082022-R_ntmbrv.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669598929/Teclados/D_NQ_NP_2X_971031-MLA51003481411_082022-F_gjcayr.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 15,
@@ -319,7 +334,8 @@ export const products = [
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669599141/Teclados/D_NQ_NP_2X_811151-MLA52350593586_112022-F_xb22e4.webp',
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669599147/Teclados/D_NQ_NP_2X_824581-MLA52350579847_112022-F_q8ooze.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 16,
@@ -333,7 +349,8 @@ export const products = [
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669599330/Consolas/D_NQ_NP_2X_770676-MLA32731813622_112019-F_kcqhim.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669599337/Consolas/D_NQ_NP_2X_865283-MLA32731749270_112019-F_hymuqb.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 17,
@@ -351,7 +368,8 @@ export const products = [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669599431/Consolas/D_NQ_NP_2X_787161-MLA52234570605_112022-F_glfeiv.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669599440/Consolas/D_NQ_NP_2X_686940-MLA52234711202_112022-F_qlvoin.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669599445/Consolas/D_NQ_NP_2X_834510-MLA52234745071_112022-F_jzwlqz.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 18,
@@ -365,7 +383,8 @@ export const products = [
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669502640/Procesadores/D_NQ_NP_2X_807581-MLA44434412331_122020-F_mrayl2.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669502650/Procesadores/D_NQ_NP_2X_606293-MLA44438099741_122020-F_pazlbs.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 19,
@@ -376,7 +395,8 @@ export const products = [
     product_rating: 1,
     product_category: 'Procesadores',
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669502904/Procesadores/D_NQ_NP_2X_919258-MLA47574845869_092021-F_vb25sp.webp',
-    product_array_img: []
+    product_array_img: [],
+    product_views: 0
   },
   {
     product_stock_id: 20,
@@ -389,7 +409,8 @@ export const products = [
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669503302/Procesadores/D_NQ_NP_2X_939789-MLA52218937216_102022-F_nrre8o.webp',
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669503310/Procesadores/D_NQ_NP_2X_872781-MLA52218896944_102022-F_ekkaji.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 21,
@@ -403,7 +424,8 @@ export const products = [
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669503517/Procesadores/D_NQ_NP_2X_648148-MLA43406873321_092020-F_ydgpwp.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669503525/Procesadores/D_NQ_NP_2X_668685-MLA43418472636_092020-F_xirem1.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 22,
@@ -414,7 +436,8 @@ export const products = [
     product_rating: 1,
     product_category: 'Teclados',
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669503884/Teclados/D_NQ_NP_2X_950459-MLA51574185481_092022-F_bn0rzu.webp',
-    product_array_img: []
+    product_array_img: [],
+    product_views: 0
   },
   {
     product_stock_id: 23,
@@ -430,7 +453,8 @@ export const products = [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669504402/Teclados/D_NQ_NP_2X_682185-MLA48002926549_102021-F_lnzsam.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669504410/Teclados/D_NQ_NP_2X_600302-MLA48002918719_102021-F_gy99no.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669504418/Teclados/D_NQ_NP_2X_892261-MLA48002950133_102021-F_ze90nu.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 24,
@@ -444,7 +468,8 @@ export const products = [
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669506044/Teclados/D_NQ_NP_2X_835174-MLA44400318884_122020-F_hukhet.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669506052/Teclados/D_NQ_NP_2X_894397-MLA44400808262_122020-F_vxcelp.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 25,
@@ -461,7 +486,8 @@ export const products = [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669594945/Combos/Kit_Gamer_Noga_6_up50je.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669594945/Combos/Kit_Gamer_Noga_2_ds16vw.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669594946/Combos/Kit_Gamer_Noga_1_m6vqjm.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 26,
@@ -477,7 +503,8 @@ export const products = [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669595668/GPU/D_NQ_NP_2X_671729-MLA48659054355_122021-F_wdbswg.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669595675/GPU/D_NQ_NP_2X_951421-MLA48659054357_122021-F_vmqh6q.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669595684/GPU/D_NQ_NP_2X_970123-MLA48658926823_122021-F_m4v4sd.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 27,
@@ -495,7 +522,8 @@ export const products = [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669600402/Mouses/D_NQ_NP_2X_801517-MLA47964246402_102021-F_zeyabq.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669600408/Mouses/D_NQ_NP_2X_686593-MLA47964187834_102021-F_km7p6j.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669600419/Mouses/D_NQ_NP_2X_640298-MLA47964181902_102021-F_urz61i.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 28,
@@ -510,7 +538,8 @@ export const products = [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669600748/Mouses/D_NQ_NP_2X_627140-MLA32148991335_092019-F_qn6pcc.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669600758/Mouses/D_NQ_NP_2X_899254-MLA32146835138_092019-F_p3wj3w.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669600763/Mouses/D_NQ_NP_2X_879189-MLA32149276083_092019-F_wqd2qy.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 29,
@@ -525,7 +554,8 @@ export const products = [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669601061/Mouses/D_NQ_NP_2X_681047-MLA51168105609_082022-F_xba9r0.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669601066/Mouses/D_NQ_NP_2X_969377-MLA51168110564_082022-F_uwt0ll.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669601073/Mouses/D_NQ_NP_2X_760208-MLA51168248096_082022-F_sxoom1.webp'
-    ]
+    ],
+    product_views: 0
   },
   {
     product_stock_id: 30,
@@ -540,7 +570,8 @@ export const products = [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669601177/Consolas/D_NQ_NP_2X_951418-MLA44484230441_012021-F_roci6y.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669601183/Consolas/D_NQ_NP_2X_629348-MLA44484230461_012021-F_pfij05.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669601187/Consolas/D_NQ_NP_2X_903686-MLA44484230439_012021-F_kurpqd.webp'
-    ]
+    ],
+    product_views: 0
   },
 
 ];
