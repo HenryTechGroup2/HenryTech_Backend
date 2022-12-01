@@ -51,7 +51,7 @@ async function DB_StartingData() {
 
 async function main() {
   try {
-    await sequelize.sync({ force: true });
+    await sequelize.sync({ force: false });
     app.listen(port);
     console.log(`listening on port ${port}`);
     await DB_StartingData();

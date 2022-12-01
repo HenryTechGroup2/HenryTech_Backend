@@ -4,7 +4,11 @@ import http from 'http';
 import Review from '../models/Review.model.js';
 
 const server = http.createServer(app);
-const io = new SocketServer(server);
+const io = new SocketServer(server, {
+    cors: {
+        origin: 'http://localhost:3000',
+    }
+});
 
 io.on('connection', (socket) => {
 
