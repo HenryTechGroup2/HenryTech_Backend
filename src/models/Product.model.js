@@ -30,6 +30,10 @@ const Product = sequelize.define(
       type: DataTypes.STRING,
       allowNull: true
     },
+    product_views: {
+      type: DataTypes.INTEGER,
+      allowNull:true
+    },
     product_description: {
       type: DataTypes.TEXT,
       allowNull: false,

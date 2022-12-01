@@ -9,6 +9,7 @@ import routerFavorites from './routes/Favorite.routes.js';
 import routesSprite from './routes/Stripe.routes.js';
 import cors from 'cors';
 import morgan from 'morgan';
+import { Server } from 'socket.io';
 
 const app = express();
 app.use(express.json());

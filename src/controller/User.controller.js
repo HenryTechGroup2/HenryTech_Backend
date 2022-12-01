@@ -1,5 +1,7 @@
 import Product from '../models/Product.model.js';
 import User from '../models/User.model.js';
+import bcrypt from 'bcryptjs';
+//Faltaria implementacion de JSON WEB TOKENS PARA CONTROLAR EL TIEMPO DE SESION
 export const getAllUsers = async (req, res) => {
   try {
     const user = await User.findAll({
@@ -91,13 +93,16 @@ export const postUser = async (req, res) => {
     user_shipping_address,
     user_isAdmin,
   } = req.body;
-
+  console.log(req.body);
+  //Encriptamos la contraseña es una funcion asincrona el 10 significa que tan segura sera entre mas grande el numero mas segura pero tardara mas tiempo
+  const password = await bcrypt.hash(user_password, 10);
+  console.log(password);
   try {
     console.log(req.body);
     const newUser = await User.create({
       user_email,
       user_name,
-      user_password,
+      user_password: password,
       user_phone,
       user_payment_method,
       user_shipping_address,
@@ -106,6 +111,7 @@ export const postUser = async (req, res) => {
     res.status(200).json({
       user: newUser,
       complete: 'User is created succesfully',
+      password,
     });
   } catch (error) {
     return res.status(404).json({ msg: error });
@@ -139,7 +145,8 @@ export const loginUser = async (req, res) => {
       }
     });
     if (!user) throw new Error('User or password incorrect');
-    if (user.user_password === user_password) {
+    //Comparamos las contraseñas deshasheandolas
+    if (await bcrypt.compare(user_password, user.user_password)) {
       return res.json({ user });
     }
     throw new Error('User or password incorrect');
