@@ -6,7 +6,8 @@ import routerOrder from './routes/Order.routes.js';
 import routerReview from './routes/Review.routes.js';
 import routerInvoice from './routes/Invoice.routes.js';
 import routerFavorites from './routes/Favorite.routes.js';
-import routesSprite from './routes/Stripe.routes.js';
+import routerSprite from './routes/Stripe.routes.js';
+import routerEmail from "./routes/Email.routes.js";
 import cors from 'cors';
 import morgan from 'morgan';
 import { Server } from 'socket.io';
@@ -22,6 +23,7 @@ app.use('/api/order', routerOrder);
 app.use('/api/review', routerReview);
 app.use('/api/invoice', routerInvoice);
 app.use('/api/favorite', routerFavorites);
-app.use('/api/payment', routesSprite);
+app.use('/api/payment', routerSprite);
+app.use('/api/send-email', routerEmail);
 
 export default app;
