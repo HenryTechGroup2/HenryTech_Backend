@@ -18,6 +18,7 @@ export const socketEvents = () => {
       console.log(reviewData);
       try {
         const newReview = await Review.create(...reviewData);
+        console.log(newReview);
         io.emit('@review/create/successful', newReview);
       } catch (error) {
         io.emit('@review/create/error', { err: error });
