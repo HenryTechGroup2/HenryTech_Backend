@@ -15,6 +15,7 @@ import {
   review as reviewInitialData,
   invoice as invoiceInitialData,
 } from './data/data.js';
+import { server, socketEvents } from './src/socket/Socket.js';
 
 const port = 3001;
 
@@ -53,9 +54,10 @@ async function DB_StartingData() {
 async function main() {
   try {
     await sequelize.sync({ force: true });
-    app.listen(port);
+    server.listen(port);
     console.log(`listening on port ${port}`);
     await DB_StartingData();
+    socketEvents();
   } catch (e) {
     console.log('error', e);
   }
