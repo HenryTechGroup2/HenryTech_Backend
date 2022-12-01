@@ -7,6 +7,7 @@ import Review from './src/models/Review.model.js';
 import Stock from "./src/models/Stock.model.js"
 import { Product_Order } from './src/models/Associations.model.js';
 import sequelize from './src/db.js';
+import { Server } from 'socket.io';
 import { 
   user as userInitialData, 
   products as productInitialData, 
@@ -14,6 +15,7 @@ import {
   review as reviewInitialData, 
   invoice as invoiceInitialData
 } from './data/data.js';
+import { socketEvents } from './src/socket/Socket.js';
 
 const port = 3001;
 
@@ -55,6 +57,7 @@ async function main() {
     app.listen(port);
     console.log(`listening on port ${port}`);
     await DB_StartingData();
+    socketEvents();
   } catch (e) {
     console.log('error', e);
   }
