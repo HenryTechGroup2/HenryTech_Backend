@@ -36,19 +36,28 @@ export const stock = [
     stock_amount: '50'
   },
   {
-    stock_amount: '0'
+    stock_amount: '50'
   },
   {
     stock_amount: '50'
   },
   {
-    stock_amount: '0'
+    stock_amount: '50'
   },
   {
     stock_amount: '50'
   },
   {
-    stock_amount: '0'
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
   },
   {
     stock_amount: '50'
@@ -573,6 +582,50 @@ export const products = [
     ],
     product_views: 0
   },
+  {
+    product_stock_id: 31,
+    product_name: 'Mouse de juego Logitech G Series G502 Hero negro',
+    product_description: 'Logitech diseña productos y experiencias que ocupan un lugar cotidiano en la vida de las personas, poniendo foco en la innovación y la calidad. Su objetivo es crear momentos verdaderamente únicos y significativos para sus usuarios. Los mouses Logitech se adaptan a la forma de tu mano para proporcionarte horas de comodidad. Sin necesidad de mover el brazo para deslizar el cursor, tu mano se fatigará menos. Son ideales para cualquier espacio de trabajo y quienes tienen la mesa llena de diversos objetos. Adaptado a tus movimientos. El mouse de juego te ofrecerá la posibilidad de marcar la diferencia y sacar ventajas en tus partidas. Su conectividad y sensor suave ayudará a que te desplaces rápido por la pantalla. La funcionalidad al alcance de tu mano. El sistema de detección de movimiento óptico te permitirá mover el cursor de una manera más precisa y sensible que en los sistemas tradicionales. Navegá rápidamente por documentos y páginas web gracias su diseño ultra delgado, ergonómico, liviano y conveniente para llevar a donde quieras o viajar.',
+    product_price: 11059,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Mouses',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669954397/Mouses/D_NQ_NP_2X_966913-MLA32149634914_092019-F_rohyx0.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669954404/Mouses/D_NQ_NP_2X_958411-MLA32145845961_092019-F_bxpnvp.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669954420/Mouses/D_NQ_NP_2X_676628-MLA32149626939_092019-F_tiemwn.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 32,
+    product_name: 'Mouse de juego Xinua M3 blanco',
+    product_description: 'Para trabajar desde casa con la computadora o aprovechar los momentos de ocio, necesitás comodidad y facilidad de movimiento. Con tu Xinua M3 encontrá eso que buscás en un solo aparato con la mejor tecnología. El mouse de juego te ofrecerá la posibilidad de marcar la diferencia y sacar ventajas en tus partidas. Su conectividad y sensor suave ayudará a que te desplaces rápido por la pantalla.Tecnología inalámbrica. Trabajá de forma inalámbrica y movete libremente sin ninguna interrupción. Al no haber cables, tu escritorio se mantiene despejado. Y además, podés llevar tu mouse fácilmente de un espacio de trabajo a otro. Navegá rápidamente por documentos y páginas web gracias su diseño ultra delgado, ergonómico, liviano y conveniente para llevar a donde quieras o viajar.',
+    product_price: 2490,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Mouses',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669954667/Mouses/D_NQ_NP_2X_717424-MLA49985543888_052022-F_qqb5uu.webp',
+    product_array_img: [],
+    product_views: 0
+  },
+  {
+    product_stock_id: 33,
+    product_name: 'Mouse Vertical Philips M614 Inalambrico 1600dpi Pc Notebook',
+    product_description: 'Diseño ergonómico para mejorar la postura de la mano y permitir el descanso de la muñeca al momento de trabajar. Tecnologia inalambrica de 2.4GHz que te permite llevar el mouse adonde quiera que vayas. Receptor nano USB para poder utilizarlo en tu notebook o PC sin que el mismo sea casi percibido, evitando roturas. Distancia de alcance de trabajo de 10 metros. Resolucion ajustable entre 800, 1200 y 1600dpi con un botón de facil acceso. Mouse de 6 botones para un perfecto trabajo. Utiliza solo 1 pila AA para funcionar. Vida util del botón de 3 millones de clicks promedio',
+    product_price: 5499,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Mouses',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669954763/Mouses/D_NQ_NP_692257-MLA45351319661_032021-O_ruvnfa.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669954770/Mouses/D_NQ_NP_816729-MLA49593111447_042022-O_amscy8.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669954777/Mouses/D_NQ_NP_926770-MLA49593084502_042022-O_g8iixu.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669954792/Mouses/D_NQ_NP_608128-MLA49593111300_042022-O_ijbrtx.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669954799/Mouses/D_NQ_NP_849257-MLA49593071643_042022-O_r4bczh.webp'
+    ],
+    product_views: 0
+  },
 
 ];
 export const user = [
@@ -662,3 +715,23 @@ export const invoice = [
     invoice_shipping: 'Mastercard',
   }
 ];
+
+// MAQUETA DE PRODUCTO
+// {
+//   product_stock_id: 0,
+//   product_name: '',
+//   product_description: '',
+//   product_price: 0,
+//   product_ofer: false,
+//   product_rating: 1,
+//   product_category: '',
+//   product_img: '',
+//   product_array_img: [
+//     '',
+//     '',
+//     '',
+//     '',
+//     ''
+//   ],
+//   product_views: 0
+// },
