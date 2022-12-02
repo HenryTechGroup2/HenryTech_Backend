@@ -1,5 +1,14 @@
 import Invoice from "../models/Invoice.model.js";
 
+export const getAllInvoice = async (req, res) => {
+  try {
+    const invoice = await Invoice.findAll();
+    return res.status(200).json(invoice);
+  } catch (error) {
+    return res.status(404).json({ msg: error });
+  };
+};
+
 export const getInvoice = async (req, res) => {
   const { id } = req.params;
   try {
