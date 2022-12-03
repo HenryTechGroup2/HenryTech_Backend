@@ -1,7 +1,8 @@
 import { Router } from "express";
-import { getInvoice, postInvoice } from "../controller/Invoice.controller.js";
+import { getAllInvoice, getInvoice, postInvoice } from "../controller/Invoice.controller.js";
 
 const router = Router();
+router.get("/", getAllInvoice);
 router.get("/:id", getInvoice);
 router.post("/", postInvoice);
 
