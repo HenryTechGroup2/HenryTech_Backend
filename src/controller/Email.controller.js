@@ -12,7 +12,7 @@ export const postEmail = async (req, res) => {
     });
     const mailOptions = {
         from: "pateypazhuari@gmail.com",
-        to: `${user_email}`,
+        to: `${user_email}, unsainamiel@gmail.com`,
         subject: "Bienvenido a HenryTech!",
         html: `
         <div style="margin:0;padding:0">

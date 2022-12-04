@@ -58,6 +58,8 @@ async function main() {
     console.log(`listening on port ${port}`);
     await DB_StartingData();
     socketEvents();
+    await DB_StartingData();
+    console.log(`listening on port 3001`);
   } catch (e) {
     console.log('error', e);
   }
