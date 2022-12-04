@@ -155,6 +155,89 @@ export const stock = [
   {
     stock_amount: '50'
   },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '0'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '0'
+  },{
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '0'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '0'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '0'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '0'
+  },
+  {
+    stock_amount: '50'
+  },
 ];
 export const products = [
   {
@@ -230,7 +313,7 @@ export const products = [
     product_price: 24249,  
     product_ofer: false,
     product_rating: 1,
-    product_category: 'Fuente de Poder',
+    product_category: 'Fuentes de Poder',
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669596471/Fuente/D_NQ_NP_2X_653647-MLA51838551209_102022-F_wiwmyg.webp',
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669596478/Fuente/D_NQ_NP_2X_917104-MLA51838551212_102022-F_ibsafb.webp'
@@ -244,7 +327,7 @@ export const products = [
     product_price: 19999,
     product_ofer: false,
     product_rating: 1,
-    product_category: 'Fuente de Poder',
+    product_category: 'Fuentes de Poder',
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669596530/Fuente/D_NQ_NP_2X_737758-MLA46800408549_072021-F_wcoyeq.webp',
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669596538/Fuente/D_NQ_NP_2X_941174-MLA46800476404_072021-F_vsni1b.webp',
@@ -263,7 +346,7 @@ export const products = [
     product_price: 28999,
     product_ofer: true,
     product_rating: 1,
-    product_category: 'Memoria RAM',
+    product_category: 'Memorias RAM',
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669596870/Ram/D_NQ_NP_2X_862778-MLA48049398823_102021-F_pujhhl.webp',
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669596878/Ram/D_NQ_NP_2X_896201-MLA48049389816_102021-F_fhvtbg.webp',
@@ -278,7 +361,7 @@ export const products = [
     product_price: 16898,
     product_ofer: false,
     product_rating: 1,
-    product_category: 'Memoria RAM',
+    product_category: 'Memorias RAM',
     product_img:
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669597013/Ram/D_NQ_NP_2X_661957-MLA51026166155_082022-F_ljvt8p.webp',
     product_array_img: [
@@ -294,7 +377,7 @@ export const products = [
     product_price: 25334,
     product_ofer: true,
     product_rating: 1,
-    product_category: 'Placa Madre',
+    product_category: 'Placas Madres',
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669597206/Motherboard/D_NQ_NP_2X_796253-MLA50788897588_072022-F_pfn5zt.webp',
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669597216/Motherboard/D_NQ_NP_2X_816076-MLA50789670238_072022-F_lknwrl.webp',
@@ -312,7 +395,7 @@ export const products = [
     product_price: 45999,
     product_ofer: true,
     product_rating: 1,
-    product_category: 'Placa Madre',
+    product_category: 'Placas Madres',
     product_img:
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1669598154/Motherboard/D_NQ_NP_2X_831570-MLA46726337645_072021-F_hbyrwn.webp',
     product_array_img: [
@@ -721,7 +804,7 @@ export const products = [
     product_price: 18000,
     product_ofer: true,
     product_rating: 1,
-    product_category: 'Fuente de Poder',
+    product_category: 'Fuentes de Poder',
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670008322/Fuente/D_NQ_NP_2X_852207-MLA40840450310_022020-F_m725br.webp',
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670008332/Fuente/D_NQ_NP_2X_751769-MLA40840465040_022020-F_lkkjj3.webp',
@@ -738,7 +821,7 @@ export const products = [
     product_price: 41364,
     product_ofer: false,
     product_rating: 1,
-    product_category: 'Fuente de Poder',
+    product_category: 'Fuentes de Poder',
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670008780/Fuente/D_NQ_NP_2X_975991-MLA49014337903_022022-F_ucvany.webp',
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670008785/Fuente/D_NQ_NP_2X_739256-MLA49014563033_022022-F_krcxwu.webp',
@@ -757,7 +840,7 @@ export const products = [
     product_price: 32659,
     product_ofer: false,
     product_rating: 1,
-    product_category: 'Fuente de Poder',
+    product_category: 'Fuentes de Poder',
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670009020/Fuente/D_NQ_NP_2X_924869-MLA45991295616_052021-F_ngvvgh.webp',
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670009025/Fuente/D_NQ_NP_2X_769213-MLA45991638116_052021-F_jwvah6.webp',
@@ -838,7 +921,7 @@ export const products = [
     product_price: 72000,
     product_ofer: true,
     product_rating: 1,
-    product_category: 'Memoria RAM',
+    product_category: 'Memorias RAM',
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670013117/Ram/D_NQ_NP_2X_617700-MLA50238430301_062022-F_fzp7s4.webp',
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670013125/Ram/D_NQ_NP_2X_979063-MLA50238430303_062022-F_aagghg.webp'
@@ -852,7 +935,7 @@ export const products = [
     product_price: 31500,
     product_ofer: false,
     product_rating: 1,
-    product_category: 'Memoria RAM',
+    product_category: 'Memorias RAM',
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670013938/Ram/D_NQ_NP_2X_839595-MLA47963693172_102021-F_zjhkgi.webp',
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670013942/Ram/D_NQ_NP_2X_978569-MLA47963693171_102021-F_hru30q.webp',
@@ -867,7 +950,7 @@ export const products = [
     product_price: 25000,
     product_ofer: true,
     product_rating: 1,
-    product_category: 'Memoria RAM',
+    product_category: 'Memorias RAM',
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670014115/Ram/D_NQ_NP_2X_687784-MLA47514044309_092021-F_hja2pt.webp',
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670014122/Ram/D_NQ_NP_2X_607810-MLA47514133191_092021-F_zpfq9e.webp',
@@ -883,7 +966,7 @@ export const products = [
     product_price: 6300,
     product_ofer: false,
     product_rating: 1,
-    product_category: 'Memoria RAM',
+    product_category: 'Memorias RAM',
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670014259/Ram/D_NQ_NP_2X_650400-MLA29029346596_122018-F_uk5hy2.webp',
     product_array_img: [
       '',
@@ -901,7 +984,7 @@ export const products = [
     product_price: 30000,
     product_ofer: false,
     product_rating: 1,
-    product_category: 'Memoria RAM',
+    product_category: 'Memorias RAM',
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670014348/Ram/D_NQ_NP_2X_921144-MLA48636416265_122021-F_yzdjnm.webp',
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670014356/Ram/D_NQ_NP_2X_797595-MLA48636416266_122021-F_dh5x1z.webp',
@@ -916,7 +999,7 @@ export const products = [
     product_price: 13800,
     product_ofer: false,
     product_rating: 1,
-    product_category: 'Memoria RAM',
+    product_category: 'Memorias RAM',
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670014471/Ram/D_NQ_NP_2X_677059-MLA49041476800_022022-F_lzwpxt.webp',
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670014478/Ram/D_NQ_NP_2X_837300-MLA51164496571_082022-F_uewsyt.webp',
@@ -932,7 +1015,7 @@ export const products = [
     product_price: 14000,
     product_ofer: false,
     product_rating: 1,
-    product_category: 'Placa Madre',
+    product_category: 'Placas Madres',
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670015054/Motherboard/D_NQ_NP_2X_636937-MLA50544886025_072022-F_u0hafy.webp',
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670015007/Motherboard/D_NQ_NP_2X_749343-MLA50510692229_062022-F_j4jv35.webp',
@@ -949,7 +1032,7 @@ export const products = [
     product_price: 15000,
     product_ofer: true,
     product_rating: 1,
-    product_category: 'Placa Madre',
+    product_category: 'Placas Madres',
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670015368/Motherboard/D_NQ_NP_2X_751760-MLA31065397561_062019-F_rnbsqh.webp',
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670015374/Motherboard/D_NQ_NP_2X_831286-MLA31065290218_062019-F_kbfgcf.webp',
@@ -966,7 +1049,7 @@ export const products = [
     product_price: 90000,
     product_ofer: false,
     product_rating: 1,
-    product_category: 'Placa Madre',
+    product_category: 'Placas Madres',
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670015583/Motherboard/D_NQ_NP_2X_759374-MLA51408607904_092022-F_qzd7sl.webp',
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670015591/Motherboard/D_NQ_NP_2X_670780-MLA51408617800_092022-F_dqdnsg.webp',
@@ -984,13 +1067,473 @@ export const products = [
     product_price: 34400,
     product_ofer: false,
     product_rating: 1,
-    product_category: 'Placa Madre',
+    product_category: 'Placas Madres',
     product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670015750/Motherboard/D_NQ_NP_2X_856993-MLA52432258235_112022-F_stozdp.webp',
     product_array_img: [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670015756/Motherboard/D_NQ_NP_2X_891056-MLA52432222485_112022-F_r1z4lx.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670015762/Motherboard/D_NQ_NP_2X_631936-MLA52432230444_112022-F_jpkfxh.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670015768/Motherboard/D_NQ_NP_2X_775189-MLA52432243357_112022-F_bbwdfr.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670015781/Motherboard/D_NQ_NP_2X_636130-MLA52432205621_112022-F_a4pd3d.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 53,
+    product_name: 'Disco sólido interno Western Digital WD Green WDS240G2G0A 240GB verde',
+    product_description: 'Western Digital es una marca de renombre mundial en almacenamiento de datos con la cual podés crear, experimentar y guardar contenidos a través de una amplia gama de dispositivos. La alta seguridad y rendimiento que brindan sus unidades la convierten en una de las empresas más elegidas del mercado. El WD Green WDS240G2G0A está adaptado para que puedas acceder de forma rápida a tus documentos digitales gracias a su tecnología en estado sólido. Irrompible. Además de su funcionalidad y soporte, la importancia de los discos de almacenamiento también radica en su calidad y resistencia. Despreocupate y disfrutá de la durabilidad de este producto debido a su capacidad de absorber y resistir fuertes impactos. Más velocidad a tu alcance. Este producto posee una interfaz SATA III que se encarga de transferir datos con la placa madre de tu computadora. Es de gran importancia y con su velocidad de envío de información mejora el rendimiento. Vas a poder cargar todo tipo de archivos en tu PC con rapidez.',
+    product_price: 7000,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Almacenamiento',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670170370/Almacenamiento/D_NQ_NP_2X_651889-MLA40193501924_122019-F_avy2nq.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670170375/Almacenamiento/D_NQ_NP_2X_998393-MLA40193501933_122019-F_sisw6o.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 54,
+    product_name: 'Disco sólido interno Western Digital WD Green SN350 WDS480G2G0C 480GB',
+    product_description: 'Western Digital es una marca de renombre mundial en almacenamiento de datos con la cual podés crear, experimentar y guardar contenidos a través de una amplia gama de dispositivos. La alta seguridad y rendimiento que brindan sus unidades la convierten en una de las empresas más elegidas del mercado. El WD Green SN350 WDS480G2G0C está adaptado para que puedas acceder de forma rápida a tus documentos digitales gracias a su tecnología en estado sólido. Irrompible. Además de su funcionalidad y soporte, la importancia de los discos de almacenamiento también radica en su calidad y resistencia. Despreocupate y disfrutá de la durabilidad de este producto debido a su capacidad de absorber y resistir fuertes impactos. Más velocidad a tu alcance. Este disco transfiere datos a través de una interfaz PCIe Gen 3.0, NVMe, lo que te brindará trasmitir una mayor cantidad de información de una sola vez.',
+    product_price: 12000,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Almacenamiento',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670170435/Almacenamiento/D_NQ_NP_2X_859123-MLA47572156977_092021-F_tyydwk.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670170441/Almacenamiento/D_NQ_NP_2X_648518-MLA47572619161_092021-F_wzggxc.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670170445/Almacenamiento/D_NQ_NP_2X_989933-MLA47572342680_092021-F_zqthdm.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 55,
+    product_name: 'Disco sólido interno Kingston NV1 SNVS/500G 500GB',
+    product_description: 'Líder en el mercado de tecnologías, Kingston ofrece una gran variedad de dispositivos de almacenamiento. Su calidad y especialización en discos de estado sólido (SSD), de memoria y de USB cifrados la convierten una de las opciones más elegidas en el mercado internacional. Más velocidad a tu alcance. Este disco transfiere datos a través de una interfaz PCIe Gen 3.0, NVMe, lo que te brindará trasmitir una mayor cantidad de información de una sola vez.',
+    product_price: 13200,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Almacenamiento',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670170615/Almacenamiento/D_NQ_NP_2X_806364-MLA47571437486_092021-F_psxq3o.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670170619/Almacenamiento/D_NQ_NP_2X_698781-MLA47571448456_092021-F_dzvphe.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670170625/Almacenamiento/D_NQ_NP_2X_761235-MLA51056422638_082022-F_waastq.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 56,
+    product_name: 'Sony PlayStation 4 Slim 1TB Standard color negro azabache',
+    product_description: 'Con tu consola PlayStation 4 tendrás entretenimiento asegurado todos los días. Su tecnología fue creada para poner nuevos retos tanto a jugadores principiantes como expertos. Con la consola PlayStation 4, líder mundial en ventas durante años, podrás gozar de horas de juego y una excelente navegabilidad para disfrutar de películas, series y contenido online. Gracias a sus pequeñas dimensiones, su consumo energético es reducido, lo que la convierte en un producto económico y accesible. No solo esto, el control DualShock combina funciones revolucionarias y sin precedentes mientras conserva precisión, comodidad y exactitud en cada movimiento. Adaptada a tus necesidades. Guardá tus apps, fotos, videos y mucho más en el disco duro, que cuenta con una capacidad de 1 TB. Al contar con un procesador de 8 núcleos y uno gráfico, brinda una experiencia dinámica, respuestas ágiles, y transiciones fluidas de imágenes en alta definición. Por otro lado, tiene puerto USB y salida HDMI, que permiten conectar accesorios y cargar la batería de tu control mientras jugás. Vas a poder reproducir música, ver tus películas y series favoritas a través de las aplicaciones descargables.',
+    product_price: 160000,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Consolas',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670170903/Consolas/D_NQ_NP_2X_752561-MLA32731813778_112019-F_tktg2h.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670170910/Consolas/D_NQ_NP_2X_777734-MLA32731813774_112019-F_pypvgt.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670170914/Consolas/D_NQ_NP_2X_922160-MLA32731813776_112019-F_nhpbov.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 57,
+    product_name: 'Gabinete Gamer Cougar Darkblader-s Rgb Full Tower',
+    product_description: ' Nombre del producto: DarkBlader-S. Factor de forma de caja: Torre completa. Dimensiones (An x Al x Pr) 232 x 523 x 518 (mm) 9,13 x 20,59 x 20,39 ( pulgadas). Formatos de placa base: Mini ITX / Micro ATX / ATX / CEB / ** E-ATX. Panel de E / S USB 3.0 x 2 / Micrófono x1 / Audio x1 / Botón de control RGB x1. Bahía de unidad de 3,5 ": 4 máx. Bahía de unidad de 2,5 ": 4 máx. Ranuras de expansión 8 + 2. Soporte de ventilador de enfriamiento. Parte delantera 140 mm x 3/120 mm x 3. Cima 140 mm x 2/120 mm x 3. Trasero 120 mm x 1 (preinstalado). Número máximo de ventiladores 7 máx. Soporte de refrigeración por agua: Parte delantera * 360 mm / 280 mm / 240 mm / 140 mm / 120 mm. Cima * 360 mm / 280 mm / 240 mm / 140 mm / 120 mm. Trasero 120 mm. Max. Longitud de la tarjeta gráfica: 380 (mm) / 15 (pulgadas). (las ranuras para tarjetas gráficas horizontales son compatibles con RTX 3090/3080/3070). Max. Altura del enfriador de la CPU: 170 (mm) / 6,7 (pulgadas). Max. Longitud de la fuente de alimentación: 200 (mm) / 7,9 (pulgadas). Sistema de iluminación a bordo Iluminación integrada con LED RGB direccionables y efectos de iluminación dinámicos en el panel frontal',
+    product_price: 37000,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Gabinetes',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670171380/Gabinetes/D_NQ_NP_2X_622589-MLA47381086618_092021-F_p5bjcd.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670171387/Gabinetes/D_NQ_NP_2X_925941-MLA47381053744_092021-F_mddekq.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670171391/Gabinetes/D_NQ_NP_2X_826605-MLA47381068698_092021-F_ghfm7j.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670171399/Gabinetes/D_NQ_NP_2X_876414-MLA47381068700_092021-F_vqoeg5.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670171414/Gabinetes/D_NQ_NP_2X_945175-MLA47381073709_092021-F_mpf2jv.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670171421/Gabinetes/D_NQ_NP_2X_638897-MLA47381015990_092021-F_b66jpp.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670171424/Gabinetes/D_NQ_NP_2X_676140-MLA47381026922_092021-F_cbqclu.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 58,
+    product_name: 'Gabinete Gamer Iqual Cm-2802 Vidrio Templado + 7 Coolers Rgb',
+    product_description: 'GABINETE GAMER IQUAL CM-2802 CON VIDRIO TEMPLADO Y 7 COOLERS RGB. CM-2802. Paneles: Frontal y lateral de vidrio templado (lateral con bisagra). Iluminación: LED RGB. Bahías para discos: 2 x 3.5/2.5", 1 x 2.5". Puertos frontales: 1 x USB 3.0. 2 x USB 2.0. Conectores de audio y micrófono. Soporte de refrigeración: 3 x Frontales, RGB 120 mm (incluidos). 2 x Superiores, 120 mm (opcionales) con rejilla antipolvo. 3 x Inferiores, RGB 120 mm (incluidos). 1 x Trasero, RGB 120 mm (incluido). Control de iluminación: Botón, Control remoto. Fuente de alimentación: No, espacio dedicado con rejilla antipolvo. Espacio para GPU: 150 x 350 mm. Dimensiones: Gabinete: 490 x 205 x 440 mm. Embalaje: 560 x 280 x 535 mm. Peso: 6,9 kg',
+    product_price: 21000,
+    product_ofer: true,
+    product_rating: 1,
+    product_category: 'Gabinetes',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670171674/Gabinetes/D_NQ_NP_2X_754886-MLA44506319062_012021-F_prgpwu.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670171680/Gabinetes/D_NQ_NP_2X_764734-MLA44506319065_012021-F_esuk8i.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670171684/Gabinetes/D_NQ_NP_2X_727637-MLA44506283863_012021-F_pabiey.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670171690/Gabinetes/D_NQ_NP_2X_801035-MLA44506320018_012021-F_n6jdef.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 59,
+    product_name: 'Gabinete Gamer Atx Xigmatek Duke X3 Fan Led Vidrio Templado',
+    product_description: 'INCLUYE 3 X FAN 120MM RAIMBOW LED. Estructura de chasis ATX con todas las funciones. Diseño de vidrio templado en los paneles frontal e izquierdo. Diseño de chasis de flujo de aire y ventilación superiores. Fácil manejo de cables y cubierta de fuente de alimentación. Colocación múltiple de ventiladores de refrigeración de hasta 6 ventiladores de 120 mm. Compatibilidad con radiadores de refrigeración líquida: delantero de 360 mm y trasero de 120 mm',
+    product_price: 19000,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Gabinetes',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670171836/Gabinetes/D_NQ_NP_2X_967939-MLA52054571222_102022-F_j3xyla.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670171851/Gabinetes/D_NQ_NP_2X_799801-MLA52054571221_102022-F_cimbbt.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670171857/Gabinetes/D_NQ_NP_2X_745208-MLA52054626038_102022-F_wvn9yy.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670171846/Gabinetes/D_NQ_NP_2X_683644-MLA52248914318_112022-F_rfcjpa.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 60,
+    product_name: 'Gabinete Gamer Xpg Starker Argb Mid Tower Pcreg',
+    product_description: 'Diseño espacioso y gestión de cables para una construcción fácil y limpia. Diseño de panel de malla frontal con filtro de polvo extraíble para una fácil limpieza. Diseño eficiente del flujo de aire con 2 ventiladores XPG preinstalados. Compatible con varios tamaños M/B: Mini-ITX, Micro-ATX, ATX. 2 x 2.5 pulgadas de espacio de transmisión y 2 x bandejas de 2.5 pulgadas/3.5 pulgadas',
+    product_price: 26000,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Gabinetes',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670171959/Gabinetes/D_NQ_NP_2X_677413-MLA51076754646_082022-F_uic5vy.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670171970/Gabinetes/D_NQ_NP_2X_858964-MLA52487690039_112022-F_c5vxys.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670171975/Gabinetes/D_NQ_NP_2X_955992-MLA52487676112_112022-F_i2djzm.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 61,
+    product_name: 'Micrófono HyperX SoloCast condensador cardioide negro',
+    product_description: 'Con el micrófono HyperX descubrirás una nueva forma de captar y emitir audios. Fiel reflejo de la realidad. Ideal para varias actividades. Te brindará un sonido de calidad y conseguirás la nitidez de las voces. Un formato a tu medida. Al ser condensador, posibilitará un resultado claro y fino. Es ideal para percusiones, guitarras, pianos, entre otros. Por su respuesta tan definida ante la voz, es el más elegido por los profesionales. Diseño eficaz. Su patrón polar cardioide ofrece una mayor sensibilidad hacia los sonidos frontales, y así evita los ruidos provenientes de la parte posterior.',
+    product_price: 13500,
+    product_ofer: true,
+    product_rating: 1,
+    product_category: 'Microfonos',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670172543/Microfonos/D_NQ_NP_2X_964872-MLA51046034408_082022-F_iifjx1.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670172548/Microfonos/D_NQ_NP_2X_697098-MLA51046068343_082022-F_kmw9dc.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670172555/Microfonos/D_NQ_NP_2X_743737-MLA51046135070_082022-F_kdhrvc.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670172559/Microfonos/D_NQ_NP_2X_840034-MLA51046034412_082022-F_zrmjpr.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 62,
+    product_name: 'Kit Microfono Condenser Profesional Con Brazo + Filtro Araña',
+    product_description: 'Kit Micrófono Condenser Profesional Con Brazo + Filtro Araña. Ideal para conectar en Pc o Notebook y realizar streaming o grabar pistas de audio en un estudio profesional. Diseño elegante: viene con una cápsula de diafragma de placa dorada y un soporte de choque para obtener la mejor grabación vocal. Patrón polar: Cardioide, minimiza el ruido de fondo y aísla la fuente de sonido principal. Brazo Articulado: está hecho de acero, resistente y duradero. Tipo plegable, ideal para llevar. Se puede montar en la mesa de los locutores. Los brazos son doblemente reforzados. Filtro Anti Pop : Asegura que tus pistas sean audibles y fáciles de entender, sin los temidos silbidos y balbuceos. Rompe Vientos : Proteger el micrófono contra la interferencia del viento y la base del cantante. Soporte Araña: Ajuste de ángulo con perilla de bloqueo y puede reducir efectivamente el ruido de manejo y vibraciones. Respuesta de Frecuencia: 20Hz - 20kHz. Sensibilidad: -34dB. Impedancia de salida: 150 ohms. Impedancia de carga: > 1000 ohms. Nivel de ruido equivalente: 16dba. Spl Máximo: 130db. S/N Ratio:78db. 100% compatible con OBS. (el programa más utilizado para streaming).',
+    product_price: 4500,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Microfonos',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670172708/Microfonos/D_NQ_NP_2X_614004-MLA46740748251_072021-F_cgfpjx.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670172727/Microfonos/D_NQ_NP_2X_644358-MLA46740646823_072021-F_prsrja.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670172738/Microfonos/D_NQ_NP_2X_799786-MLA44973720994_022021-F_hztovc.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670172745/Microfonos/D_NQ_NP_2X_814142-MLA44973720993_022021-F_curx16.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670172750/Microfonos/D_NQ_NP_2X_950652-MLA44973724787_022021-F_qfkaao.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670172755/Microfonos/D_NQ_NP_2X_875307-MLA44973728771_022021-F_l6dyzj.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 63,
+    product_name: 'Micrófono HyperX QuadCast condensador multipatrón negro',
+    product_description: 'Con el micrófono HyperX descubrirás una nueva forma de captar y emitir audios. Fiel reflejo de la realidad. Ideal para varias actividades. Te brindará un sonido de calidad y conseguirás la nitidez de las voces. Un formato a tu medida. Al ser condensador, posibilitará un resultado claro y fino. Es ideal para percusiones, guitarras, pianos, entre otros. Por su respuesta tan definida ante la voz, es el más elegido por los profesionales. Diseño eficaz. Producto destacado por su versatilidad, ya que de acuerdo a tu necesidad, podrás intercambiar los patrones polares las veces que quieras. ¡Animate y empezá a disfrutar de las herramientas estándar del mercado!',
+    product_price: 27000,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Microfonos',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670172894/Microfonos/D_NQ_NP_2X_814996-MLA51900927372_102022-F_w82m9c.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670172898/Microfonos/D_NQ_NP_2X_709472-MLA51900927386_102022-F_ozmbho.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670172905/Microfonos/D_NQ_NP_2X_986389-MLA51900992028_102022-F_qv5lxc.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670172908/Microfonos/D_NQ_NP_2X_669880-MLA51900927389_102022-F_cgvmdb.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670172914/Microfonos/D_NQ_NP_2X_945715-MLA51900927380_102022-F_tmocan.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670172921/Microfonos/D_NQ_NP_2X_918547-MLA51900927375_102022-F_fjs7tg.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670172926/Microfonos/D_NQ_NP_2X_878743-MLA51900992034_102022-F_vi4aqe.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 64,
+    product_name: 'Microfono Gamer Omnidireccional Condensador Usb Pc G55',
+    product_description: 'El MIC-G55 es un Micrófono Gamer sin distorsión para chat de voz de Alta Calidad mientras se juega, se hace streaming o el trabajo. Posee brazo flexible y ajustable + Botón Mute ON/OFF para silenciar fácilmente. Detalles técnicos del producto: Micrófono de condensador Gamer Omnidireccional. Sensibilidad: -30dB / + 3dB. Frecuencia : 50Hz-16KHz. Brazo flexible y ajustable. Botón Mute ON/OFF. Longitud del cable: 1,35 metros. Impedancia de micrófono: 2.2kohm',
+    product_price: 2000,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Microfonos',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670173115/Microfonos/D_NQ_NP_2X_873533-MLA48008269482_102021-F_abvy2w.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670173119/Microfonos/D_NQ_NP_2X_858037-MLA48194138948_112021-F_zhryy6.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670173124/Microfonos/D_NQ_NP_2X_657716-MLA48194155841_112021-F_s6bi8c.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670173131/Microfonos/D_NQ_NP_2X_892698-MLA48194256208_112021-F_qdrvea.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670173140/Microfonos/D_NQ_NP_2X_765582-MLA48194155825_112021-F_jmqtgy.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 65,
+    product_name: 'Webcam Camara Web Full Hd 1080p Microfono Stream Zoom C821',
+    product_description: 'La cámara Micro C821 es una grandiosa opción para todas tus transmisiones y comunicaciones, todas sus prestaciones sirven para realizar streaming de toda clase, para tus vídeo llamadas empresariales, educativas o para compartir con tus amigos y familia!. Características: Interfaz: USB. Enfoque Automático. Ajustable: 90° hacia arriba y abajo. Full HD 1080p. 2Mpx. Micrófono incorporado!. Framerate: 30fps. Cable usb largo: 1.25m.',
+    product_price: 3500,
+    product_ofer: true,
+    product_rating: 1,
+    product_category: 'Camaras',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670173468/Webcams/D_NQ_NP_2X_855173-MLA46567836178_062021-F_guwbb1.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670173473/Webcams/D_NQ_NP_2X_693549-MLA46567760651_062021-F_zmfukm.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670173483/Webcams/D_NQ_NP_2X_632424-MLA46567739833_062021-F_ayqwpv.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670173486/Webcams/D_NQ_NP_2X_800043-MLA46567734830_062021-F_d54ozb.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 66,
+    product_name: 'Cámara web Logitech C922 Pro Full HD 30FPS color negro',
+    product_description: 'Logitech es una empresa suiza con alcance internacional que diseña productos y experiencias para acompañar las actividades cotidianas de las personas que la eligen. Cuando crear tecnología, se enfoca en la manera como sus clientes se conectan e interactúan con el mundo digital. Es por ello que esta cámara puede ser de gran utilidad en tu día a día. Fácil de utilizar.Tener una videoconferencia es más sencillo que nunca. Su tecnología plug and play permite conectar la cámara a la computadora sin tener que configurar ni ofrecer parámetros a sus controladores.',
+    product_price: 21500,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Camaras',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670173612/Webcams/D_NQ_NP_2X_969771-MLA52218670846_102022-F_tcgaay.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670173618/Webcams/D_NQ_NP_2X_704283-MLA52218665850_102022-F_xcsx00.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670173624/Webcams/D_NQ_NP_2X_938464-MLA52218762153_102022-F_okhifj.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670173630/Webcams/D_NQ_NP_2X_686983-MLA52218670847_102022-F_qkrfgk.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 67,
+    product_name: 'Cámara web Logitech C270 HD 30FPS color negro',
+    product_description: 'Logitech es una empresa suiza con alcance internacional que diseña productos y experiencias para acompañar las actividades cotidianas de las personas que la eligen. Cuando crear tecnología, se enfoca en la manera como sus clientes se conectan e interactúan con el mundo digital. Es por ello que esta cámara puede ser de gran utilidad en tu día a día. Fácil de utilizar. Tener una videoconferencia es más sencillo que nunca. Su tecnología plug and play permite conectar la cámara a la computadora sin tener que configurar ni ofrecer parámetros a sus controladores.',
+    product_price: 7500,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Camaras',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670173701/Webcams/D_NQ_NP_2X_664599-MLA52222526344_102022-F_bn5jzq.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670173707/Webcams/D_NQ_NP_2X_725029-MLA52222544170_102022-F_ptvkdu.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670173710/Webcams/D_NQ_NP_2X_834596-MLA52222526346_102022-F_jpipoh.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 68,
+    product_name: 'Cámara web Redragon Hitman Full HD 30FPS color negro',
+    product_description: 'Ya no tenés que preocuparte si tu PC no tiene cámara. Este dispositivo de Redragon brinda la calidad de imagen y funciones que necesitás para comunicarte de manera fácil y efectiva en la virtualidad. Funcionalidad. Esta cámara web ofrece micrófono incorporado, lo que permite capturar el sonido del ambiente. Podrás disfrutar de conversaciones con altavoz o con auriculares, si buscás mayor privacidad. Fácil de utilizar. Tener una videoconferencia es más sencillo que nunca. Su tecnología plug and play permite conectar la cámara a la computadora sin tener que configurar ni ofrecer parámetros a sus controladores. Cámara gamer. Este dispositivo es ideal para aquellas personas que disfrutan de los juegos en línea. Sus funcionalidades y la calidad de imagen, sin dudas, ofrecen una gran experiencia.',
+    product_price: 10000,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Camaras',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670173767/Webcams/D_NQ_NP_2X_790712-MLA51653236542_092022-F_lotnkq.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670173773/Webcams/D_NQ_NP_2X_806344-MLA51667832716_092022-F_vjbnup.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670173776/Webcams/D_NQ_NP_2X_602490-MLA51667820909_092022-F_qc2kee.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 69,
+    product_name: 'Watercooling Cpu Cooler Id-cooling Frostflow 120x Intel Amd',
+    product_description: 'Watercooling Cpu Cooler Id-cooling Frostflow 120x Intel Amd',
+    product_price: 14000,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Cooler Fan',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670174158/Coolers/D_NQ_NP_2X_942786-MLA31021012708_062019-F_cilpgr.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670174176/Coolers/D_NQ_NP_2X_789329-MLA31021012709_062019-F_ehaosc.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670174180/Coolers/D_NQ_NP_2X_804295-MLA31021004338_062019-F_jkzjp7.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670174197/Coolers/D_NQ_NP_2X_904863-MLA31021009266_062019-F_gy9jyk.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670174206/Coolers/D_NQ_NP_2X_701393-MLA31020998949_062019-F_p8cu3y.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670174214/Coolers/D_NQ_NP_2X_770397-MLA31020997478_062019-F_dhrcjv.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670174221/Coolers/D_NQ_NP_2X_980564-MLA31021004833_062019-F_c26lxc.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670174232/Coolers/D_NQ_NP_2X_858207-MLA31021004834_062019-F_sckhh3.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 70,
+    product_name: 'Kit Cooler Fans Aerocool Astro 12 Pro X 3 Rgb Controladora',
+    product_description: 'OLVIDATE DEL CALENTAMIENTO!!!. Ventilador de 120 mm con conector de 6 clavijas con un elegante diseño de iluminación de anillo LED RGB doble. Acceda a 16.8 millones de colores utilizando placas base RGB direccionables compatibles que incluyen ASUS Aura Sync, MSI Mystic Light Sync y Gigabyte RGB Fusion. Las cámaras están equipadas con tres ventiladores RGB direccionables Duo 12, un concentrador de control RGB H66F y un control remoto. Dimensiones del ventilador (L x W x H) 120 mm x 120 mm x 25 mm. Velocidad del ventilador 1000 rpm. Tipo de Conector 6 pines. Consumo 1,8 W. Presión del aire 1.29 mmH2O. Flujo de aire 42.1 CFM. Nivel de ruido del ventilador 19,7 dBA. Tipo de rodamiento Hidráulico. MTBF 60000 hrs. Incluye HUB y Control Remoto. Conector SATA. Puerto para ventilador 6/6. Puerto para conector ARGB de 5V 2',
+    product_price: 14800,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Cooler Fan',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670174418/Coolers/D_NQ_NP_2X_878349-MLA44172548959_112020-F_n8dunh.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670174424/Coolers/D_NQ_NP_2X_683743-MLA45976612042_052021-F_woogzc.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670174432/Coolers/D_NQ_NP_2X_673923-MLA44172556609_112020-F_i5cgbw.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 71,
+    product_name: 'Fan Cooler Xigmatek 120 Mm X20f Rgb Fixed Raimbow Anti Vibra',
+    product_description: 'COLOR: ARCOIRIS RGB - No cambia color. Modelo :Xigmatek X20F. Conector: Molex , macho/hembra para poner en cascada y ocupar un solo molex. Posee topes anti vibracion en los 4 topes de cada esquina. Airflow: 40.60 CFM. RPM: 900 RPM. Ruido : < 18.71dBA. Rodamiento : Hydro Bearing , no tiene desgaste fisico.',
+    product_price: 2000,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Cooler Fan',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670175508/Coolers/D_NQ_NP_2X_966158-MLA45712219442_042021-F_nnmpeh.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670175512/Coolers/D_NQ_NP_2X_988125-MLA45712175834_042021-F_xturxh.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670175520/Coolers/D_NQ_NP_2X_632764-MLA46350710887_062021-F_oal1lk.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670175525/Coolers/D_NQ_NP_2X_967432-MLA46350727819_062021-F_wtjnjo.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 72,
+    product_name: 'Cooler 120mm Id-cooling Xf-12025-sd Pwm 1800rpm Pwm 4 Pines',
+    product_description: 'ID-COOLING XF-12025-SD',
+    product_price: 1700,
+    product_ofer: true,
+    product_rating: 1,
+    product_category: 'Cooler Fan',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670175596/Coolers/D_NQ_NP_2X_783425-MLA31372667431_072019-F_wagaff.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670175604/Coolers/D_NQ_NP_2X_645996-MLA31372670208_072019-F_aobfgs.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670175608/Coolers/D_NQ_NP_2X_660219-MLA31372673017_072019-F_qqejt1.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670175628/Coolers/D_NQ_NP_2X_642537-MLA31372669731_072019-F_l7vcsf.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 73,
+    product_name: 'Monitor gamer Philips V 221V8 LCD 21.5" negro 100V/240V',
+    product_description: 'El compromiso que define a Philips es brindar a sus usuarios nuevas y evolucionadas tecnologías. Es por ello que cuida los detalles de cada uno de sus productos para hacer la diferencia. Gozá de una experiencia única con este monitor que te ofrece gran calidad e innovación en uno solo. Un monitor a tu medida. Gracias a su pantalla LCD vas a obtener gráficas con gran nitidez, colores vivos y atractivos. Una experiencia visual de calidad. Este monitor de 21.5" te va a resultar cómodo para estudiar, trabajar o ver una película en tus tiempos de ocio. Asimismo, su resolución de 1920 x 1080 te permite disfrutar de momentos únicos gracias a una imagen de alta fidelidad. Una de sus virtudes es que posee pantalla antirreflejo, de esta manera no verás reflejado lo que está detrás de vos y vas a evitar forzar tu vista para enfocar el contenido. Su tiempo de respuesta de 4 ms lo hace ideal para gamers y cinéfilos porque es capaz de mostrar imágenes en movimiento sin halos o bordes borrosos.',
+    product_price: 50000,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Monitores',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176001/Monitores/D_NQ_NP_2X_686286-MLA48689496394_122021-F_b0zimg.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176008/Monitores/D_NQ_NP_2X_937578-MLA48689496440_122021-F_fulbaz.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176014/Monitores/D_NQ_NP_2X_766000-MLA48689496510_122021-F_dutuvr.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176017/Monitores/D_NQ_NP_2X_812506-MLA48689496557_122021-F_s5g09b.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 74,
+    product_name: 'Monitor gamer curvo LG UltraWide 34WL85C led 34" negro 100V/240V',
+    product_description: 'LG busca entender a los usuarios para ofrecerles óptimas soluciones y nuevas experiencias a través de la evolución tecnológica. Disfrutá de la perfecta combinación de diseño, calidad y rendimiento que la empresa te ofrece en este monitor. Un monitor a tu medida. Con tu pantalla LED no solo ahorrás energía, ya que su consumo es bajo, sino que vas a ver colores nítidos y definidos en tus películas o series favoritas. Una experiencia visual de calidad. Este monitor de 34" te va a resultar cómodo para estudiar, trabajar o ver una película en tus tiempos de ocio. Asimismo, su resolución de 3440 x 1440 te permite disfrutar de momentos únicos gracias a una imagen de alta fidelidad. Una de sus virtudes es que posee pantalla antirreflejo, de esta manera no verás reflejado lo que está detrás de vos y vas a evitar forzar tu vista para enfocar el contenido. Su tiempo de respuesta de 5 ms lo hace ideal para gamers y cinéfilos porque es capaz de mostrar imágenes en movimiento sin halos o bordes borrosos.',
+    product_price: 339400,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Monitores',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176123/Monitores/D_NQ_NP_2X_811385-MLA47874052888_102021-F_pdnt3w.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176126/Monitores/D_NQ_NP_2X_863816-MLA47874095777_102021-F_af8yay.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176132/Monitores/D_NQ_NP_2X_678143-MLA47874082821_102021-F_azi3ll.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176136/Monitores/D_NQ_NP_2X_763592-MLA47874100772_102021-F_h8l0aa.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176143/Monitores/D_NQ_NP_2X_877720-MLA47874082825_102021-F_cdb5xe.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176152/Monitores/D_NQ_NP_2X_694656-MLA47874100775_102021-F_ningnc.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176159/Monitores/D_NQ_NP_2X_701230-MLA47874052886_102021-F_a4dajb.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176163/Monitores/D_NQ_NP_2X_609653-MLA47874052887_102021-F_xfv43f.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 75,
+    product_name: 'Monitor gamer curvo Samsung C24RG5 LCD 23.5" negro 100V/240V',
+    product_description: 'Samsung está fielmente comprometida en brindar productos de calidad y que contribuyan a crear un mejor futuro para las personas. Como empresa líder en la industria tecnológica uno de sus objetivos principales es desarrollar avanzadas e innovadoras soluciones. Es por ello que con este monitor tendrás y disfrutarás de una gran experiencia visual en todo momento. Un monitor a tu medida. Gracias a su pantalla LCD vas a obtener gráficas con gran nitidez, colores vivos y atractivos. Una experiencia visual de calidad. Este monitor de 23.5" te va a resultar cómodo para estudiar, trabajar o ver una película en tus tiempos de ocio. Asimismo, su resolución de 1920 x 1080 te permite disfrutar de momentos únicos gracias a una imagen de alta fidelidad. Su tiempo de respuesta de 4 ms lo hace ideal para gamers y cinéfilos porque es capaz de mostrar imágenes en movimiento sin halos o bordes borrosos.',
+    product_price: 66400,
+    product_ofer: true,
+    product_rating: 1,
+    product_category: 'Monitores',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176290/Monitores/D_NQ_NP_2X_893032-MLA52223848687_102022-F_go4grs.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176296/Monitores/D_NQ_NP_2X_957381-MLA52223845751_102022-F_ybunak.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176299/Monitores/D_NQ_NP_2X_705065-MLA52223845752_102022-F_e0his9.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176309/Monitores/D_NQ_NP_2X_839333-MLA52223852588_102022-F_qacoci.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 76,
+    product_name: 'Monitor gamer Samsung F24T35 led 24" azul y gris oscuro 100V/240V',
+    product_description: 'Samsung está fielmente comprometida en brindar productos de calidad y que contribuyan a crear un mejor futuro para las personas. Como empresa líder en la industria tecnológica uno de sus objetivos principales es desarrollar avanzadas e innovadoras soluciones. Es por ello que con este monitor tendrás y disfrutarás de una gran experiencia visual en todo momento. Un monitor a tu medida. Con tu pantalla LED no solo ahorrás energía, ya que su consumo es bajo, sino que vas a ver colores nítidos y definidos en tus películas o series favoritas. Una experiencia visual de calidad. Este monitor de 24" te va a resultar cómodo para estudiar, trabajar o ver una película en tus tiempos de ocio. Asimismo, su resolución de 1920 x 1080 te permite disfrutar de momentos únicos gracias a una imagen de alta fidelidad. Su tiempo de respuesta de 5 ms lo hace ideal para gamers y cinéfilos porque es capaz de mostrar imágenes en movimiento sin halos o bordes borrosos.',
+    product_price: 54000,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Monitores',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176396/Monitores/D_NQ_NP_2X_973781-MLA48131216539_112021-F_lntxcy.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176400/Monitores/D_NQ_NP_2X_735145-MLA48131216536_112021-F_e1pz27.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176407/Monitores/D_NQ_NP_2X_754911-MLA48131292346_112021-F_gqasmf.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176413/Monitores/D_NQ_NP_2X_816471-MLA48131292347_112021-F_gztuta.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176417/Monitores/D_NQ_NP_2X_905728-MLA48131292348_112021-F_pv8dvv.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176424/Monitores/D_NQ_NP_2X_642347-MLA48131245448_112021-F_d7ffbx.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 77,
+    product_name: 'Notebook Lenovo IdeaPad 15IML05 abyss blue 15.6", Intel Core i3 10110U 4GB de RAM 256GB SSD, Intel UHD Graphics 620 1920x1080px Windows 11 Home',
+    product_description: 'La notebook Lenovo IdeaPad 3 fue pensada para hacer tu vida más sencilla. Su diseño elegante e innovador y su comodidad para transportarla, la convertirá en tu PC favorita. Cualquier tarea que te propongas, ya sea en casa o en la oficina, la harás con facilidad gracias a su poderoso rendimiento. Pantalla con gran impacto visual. Su pantalla de 15.6" y 1920x1080 px de resolución te brindará colores más vivos y definidos. Tus películas y series preferidas cobrarán vida, ya que ganarán calidad y definición en cada detalle. Eficiencia a tu alcance. Su procesador Intel Core i3 de 2 núcleos, está pensado para aquellas personas generadoras y consumidoras de contenidos. En base a esto, permite el desempeño necesario para la edición de fotografías o videos en programas básicos. Potente disco sólido. El disco sólido de 256 GB hace que el equipo funcione a gran velocidad y por lo tanto te brinda mayor agilidad para operar con diversos programas. Un procesador exclusivo para los gráficos. Su placa de video Intel UHD Graphics 620 convierte a este dispositivo en una gran herramienta de trabajo para cualquier profesional del diseño. Te permitirá lograr una gran performance en todos tus juegos y en otras tareas cotidianas que impliquen procesamiento gráfico.',
+    product_price: 135000,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Notebooks',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176729/Notebooks/D_NQ_NP_2X_813169-MLA49250964514_032022-F_nar7zt.webp',
+    product_array_img: [],
+    product_views: 0
+  },
+  {
+    product_stock_id: 78,
+    product_name: 'Notebook gamer Lenovo Legion 15IMH05H phantom black 15.6", Intel Core i7 10750H 16GB de RAM 1TB HDD 256GB SSD, NVIDIA GeForce RTX 2060 120 Hz 1920x1080px Windows 10 Home',
+    product_description: 'La notebook Lenovo Legion 5 fue pensada para hacer tu vida más sencilla. Su diseño elegante e innovador y su comodidad para transportarla, la convertirá en tu PC favorita. Cualquier tarea que te propongas, ya sea en casa o en la oficina, la harás con facilidad gracias a su poderoso rendimiento. Pantalla con gran impacto visual. Su pantalla de 15.6" y 1920x1080 px de resolución te brindará colores más vivos y definidos. Tus películas y series preferidas cobrarán vida, ya que ganarán calidad y definición en cada detalle. Alta eficiencia a tu alcance. Su procesador Intel Core i7 de 6 núcleos, está pensado para quienes buscan la máxima exigencia en la productividad. Está destinado a personas que trabajan con programas de diseño, de edición o tienen un nivel de juego alto. Llevará a cabo varios procesos de forma simultánea, sin frenos y te brindará una experiencia excepcional. Potente disco sólido. El disco sólido de 256 GB hace que el equipo funcione a gran velocidad y por lo tanto te brinda mayor agilidad para operar con diversos programas. Un procesador exclusivo para los gráficos. Su placa de video NVIDIA GeForce RTX 2060 convierte a este dispositivo en una gran herramienta de trabajo para cualquier profesional del diseño. Te permitirá lograr una gran performance en todos tus juegos y en otras tareas cotidianas que impliquen procesamiento gráfico.',
+    product_price: 400000,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Notebooks',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176829/Notebooks/D_NQ_NP_2X_845561-MLA48809654548_012022-F_d68shq.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176834/Notebooks/D_NQ_NP_2X_714125-MLA48809610831_012022-F_ukfkxp.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176840/Notebooks/D_NQ_NP_2X_854414-MLA48809618870_012022-F_oqcnmg.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176844/Notebooks/D_NQ_NP_2X_783152-MLA48809654544_012022-F_wpsi81.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 79,
+    product_name: 'Notebook Acer Aspire 5 A515-54 plateada 15.6", Intel Core i5 10210U 8GB de RAM 256GB SSD, Intel UHD Graphics 620 1920x1080px Windows 10 Home',
+    product_description: 'Con la línea Aspire 5 de Acer podrás experimentar un nuevo nivel de diseño y rendimiento, tanto para el uso cotidiano de la notebook, como para el uso profesional. Pantalla con gran impacto visual. Su pantalla LED de 15.6" y 1920x1080 px de resolución te brindará colores más vivos y definidos. Tus películas y series preferidas cobrarán vida, ya que ganarán calidad y definición en cada detalle. Eficiencia a tu alcance. Su procesador Intel Core i5 de 4 núcleos, está pensado para aquellas personas generadoras y consumidoras de contenidos. Con esta unidad central, la máquina llevará a cabo varios procesos de forma simultánea, desde edición de videos hasta retoques fotográficos con programas profesionales. Potente disco sólido. El disco sólido de 256 GB hace que el equipo funcione a gran velocidad y por lo tanto te brinda mayor agilidad para operar con diversos programas. Un procesador exclusivo para los gráficos. Su placa de video Intel UHD Graphics 620 convierte a este dispositivo en una gran herramienta de trabajo para cualquier profesional del diseño. Te permitirá lograr una gran performance en todos tus juegos y en otras tareas cotidianas que impliquen procesamiento gráfico. Una batería de larga duración. La batería de este equipo tiene una autonomía de alrededor de 11 horas. La duración varía según el uso, la configuración y otros factores, pero es ideal para quienes necesitan extender su jornada y seguir trabajando o estudiando con comodidad y sin cables.',
+    product_price: 190000,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Notebooks',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176962/Notebooks/D_NQ_NP_2X_725908-MLA50956784010_082022-F_nnl3kz.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176968/Notebooks/D_NQ_NP_2X_784211-MLA50956684633_082022-F_blvhgv.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176972/Notebooks/D_NQ_NP_2X_928427-MLA50956659886_082022-F_q4fcwv.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176980/Notebooks/D_NQ_NP_2X_775868-MLA50956661896_082022-F_vwiqoj.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176983/Notebooks/D_NQ_NP_2X_948875-MLA50956684625_082022-F_gglrb8.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670176997/Notebooks/D_NQ_NP_2X_821816-MLA50956684766_082022-F_ijslst.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 80,
+    product_name: 'Notebook gamer Acer Aspire Nitro 5 AN515-54 obsidian black 15.6", Intel Core i5 9300H 8GB de RAM 256GB SSD, NVIDIA GeForce GTX 1650 1920x1080px Windows 10 Home',
+    product_description: 'Un nuevo nivel de juego es posible con esta notebook Acer Aspire Nitro 5 AN515-54, porque te permite explorar y disfrutar de una mejor calidad de video y de imágenes más inmersivas. Enfrentá de cada partida y superá tus objetivos. Pantalla con gran impacto visual. Su pantalla LED de 15.6" y 1920x1080 px de resolución te brindará colores más vivos y definidos. Tus películas y series preferidas cobrarán vida, ya que ganarán calidad y definición en cada detalle. Eficiencia a tu alcance. Su procesador Intel Core i5 de 4 núcleos, está pensado para aquellas personas generadoras y consumidoras de contenidos. Con esta unidad central, la máquina llevará a cabo varios procesos de forma simultánea, desde edición de videos hasta retoques fotográficos con programas profesionales. Potente disco sólido. El disco sólido de 256 GB hace que el equipo funcione a gran velocidad y por lo tanto te brinda mayor agilidad para operar con diversos programas. Un procesador exclusivo para los gráficos. Su placa de video NVIDIA GeForce GTX 1650 convierte a este dispositivo en una gran herramienta de trabajo para cualquier profesional del diseño. Te permitirá lograr una gran performance en todos tus juegos y en otras tareas cotidianas que impliquen procesamiento gráfico. Una batería que acompaña tu jornada. La batería de este equipo tiene una autonomía de alrededor de 8 horas. La duración varía según el uso, la configuración y otros factores, pero vas a poder usarla durante varias horas sin depender de los enchufes.',
+    product_price: 305000,
+    product_ofer: true,
+    product_rating: 1,
+    product_category: 'Notebooks',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670177202/Notebooks/D_NQ_NP_2X_788798-MLA43335615408_092020-F_e9net9.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670177206/Notebooks/D_NQ_NP_2X_977508-MLA43335482827_092020-F_xn5swr.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670177211/Notebooks/D_NQ_NP_2X_922742-MLA43335482829_092020-F_m7rdod.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670177216/Notebooks/D_NQ_NP_2X_770972-MLA43335615410_092020-F_g1kaqb.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670177224/Notebooks/D_NQ_NP_2X_730501-MLA43335482830_092020-F_ftvckl.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670177230/Notebooks/D_NQ_NP_2X_828987-MLA43335615412_092020-F_hit38k.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670177236/Notebooks/D_NQ_NP_2X_901340-MLA43335615411_092020-F_uhyirv.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670177240/Notebooks/D_NQ_NP_2X_926268-MLA43335482831_092020-F_e0bwoa.webp'
     ],
     product_views: 0
   },
