@@ -238,6 +238,18 @@ export const stock = [
   {
     stock_amount: '50'
   },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
+  },
+  {
+    stock_amount: '50'
+  },
 ];
 export const products = [
   {
@@ -1534,6 +1546,69 @@ export const products = [
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670177230/Notebooks/D_NQ_NP_2X_828987-MLA43335615412_092020-F_hit38k.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670177236/Notebooks/D_NQ_NP_2X_901340-MLA43335615411_092020-F_uhyirv.webp',
       'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670177240/Notebooks/D_NQ_NP_2X_926268-MLA43335482831_092020-F_e0bwoa.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 81,
+    product_name: 'Auriculares Gamer Redragon Icon H520 Negro Y Rojo',
+    product_description: '¡Experimentá la adrenalina de sumergirte en la escena de otra manera! Tener auriculares específicos para jugar cambia completamente tu experiencia en cada partida. Con los Redragon ICON H520 no te perdés ningún detalle y escuchás el audio tal y como fue diseñado por los creadores. El formato perfecto para vos. Al ser headset podrás escuchar tu música preferida, mantener llamadas telefónicas y jugar en línea desde tu PC sin perderte ningún detalle.',
+    product_price: 16000,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Auriculares',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670183328/Auriculares/D_NQ_NP_2X_982468-MLA51837561620_102022-F_jcdkgm.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670183336/Auriculares/D_NQ_NP_2X_600197-MLA51837579530_102022-F_zz876r.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670183344/Auriculares/D_NQ_NP_2X_635530-MLA51837618348_102022-F_bxuzer.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670183353/Auriculares/D_NQ_NP_2X_901908-MLA51837522858_102022-F_semywb.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670183361/Auriculares/D_NQ_NP_2X_779305-MLA51837575594_102022-F_oyczm5.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670183365/Auriculares/D_NQ_NP_2X_644497-MLA51837574559_102022-F_j9lhol.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670183371/Auriculares/D_NQ_NP_2X_801296-MLA51837631300_102022-F_k07cbf.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 82,
+    product_name: 'Auriculares gamer Redragon Chroma Lamia 2 lunar white con luz rgb LED',
+    product_description: '¡Experimentá la adrenalina de sumergirte en la escena de otra manera! Tener auriculares específicos para jugar cambia completamente tu experiencia en cada partida. Con los Redragon Lamia 2 no te perdés ningún detalle y escuchás el audio tal y como fue diseñado por los creadores. El formato perfecto para vos. El diseño over-ear brinda una comodidad insuperable gracias a sus suaves almohadillas. Al mismo tiempo, su sonido envolvente del más alto nivel se convierte en el protagonista de la escena.',
+    product_price: 11000,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Auriculares',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670183487/Auriculares/D_NQ_NP_2X_700257-MLA44366065265_122020-F_ndu4xm.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670183492/Auriculares/D_NQ_NP_2X_716251-MLA44366136210_122020-F_fogfva.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 83,
+    product_name: 'Auriculares gamer HyperX Cloud II rojo con luz LED',
+    product_description: '¡Experimentá la adrenalina de sumergirte en la escena de otra manera! Tener auriculares específicos para jugar cambia completamente tu experiencia en cada partida. Con los HyperX Cloud II no te perdés ningún detalle y escuchás el audio tal y como fue diseñado por los creadores. El formato perfecto para vos. El diseño over-ear brinda una comodidad insuperable gracias a sus suaves almohadillas. Al mismo tiempo, su sonido envolvente del más alto nivel se convierte en el protagonista de la escena.',
+    product_price: 18800,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Auriculares',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670183556/Auriculares/D_NQ_NP_2X_842712-MLA40185983198_122019-F_gaok08.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670183561/Auriculares/D_NQ_NP_2X_654806-MLA40185983199_122019-F_hy4b1c.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670183565/Auriculares/D_NQ_NP_2X_621706-MLA40186103035_122019-F_tjfya4.webp'
+    ],
+    product_views: 0
+  },
+  {
+    product_stock_id: 84,
+    product_name: 'Auricular Gamer Con Microfono Pc Noga Luces Led Rgb St-808 E',
+    product_description: 'Con ST-808 podrás disfrutar tus juegos en tu PC de una manera excepcional. Su Sonido envolvente con Power Bass te harán vivir una experiencia de audio inmersiva. Posee Micrófono omnidireccional flexible para poder comunicarte con tu compañeros de equipo. También posee LEDS Multicolores en laterales. Cable con conector USB para LEDS y 2 miniplug 3.5 Stereo para Audio/Mic. Diseño Gamer ajustable con acolchado que produce reducción pasiva de ruidos. Sentite parte de la acción con todos los matices del sonido. Detalles: Marca : noga. Modelo : ST-808. Sonido envolvente sin distorsión con Power Bass. Drivers de 40 mm. de diámetro. Potencia de 50mW. Micrófono omnidireccional flexible. LEDS Multicolores en laterales. Control de Volumen en cable. 2 Conectores miniplug 3.5 mm. para Audio/Mic. para PC + Conector USB para LEDS. Cable con longitud de 2 metros. Diseño Gamer ajustable con acolchados en laterales y vincha con reducción pasiva de ruidos',
+    product_price: 3700,
+    product_ofer: false,
+    product_rating: 1,
+    product_category: 'Auriculares',
+    product_img: 'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670183908/Auriculares/D_NQ_NP_2X_932433-MLA49241166206_032022-F_cfvazi.webp',
+    product_array_img: [
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670183914/Auriculares/D_NQ_NP_2X_791745-MLA49241115484_032022-F_xi5gmo.webp',
+      'https://res.cloudinary.com/dd9tlax1c/image/upload/v1670183929/Auriculares/D_NQ_NP_2X_727060-MLA49241146382_032022-F_b7flng.webp'
     ],
     product_views: 0
   },
