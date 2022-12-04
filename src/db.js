@@ -15,8 +15,10 @@ const { PGDATABASE, PGHOST, PGPASSWORD, PGPORT, PGUSER } = process.env;
 //   }
 // );
 const sequelize = new Sequelize(
-  `postgres://postgres:43486277@localhost:5432/henrytech`,
-  {
+
+  `postgres://${PGUSER}:${PGPASSWORD}@${PGHOST}:${PGPORT}/${PGDATABASE}`,
+  { 
+
     logging: false,
     native: false,
     dialectModule: pg,
