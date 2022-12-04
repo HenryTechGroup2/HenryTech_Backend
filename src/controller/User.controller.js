@@ -132,6 +132,32 @@ export const deleteUser = async (req, res) => {
   }
 };
 
+export const loginUserAuth0 = async (req, res) => {
+  const { user_email, user_name } = req.body;
+
+  try {
+    const userExist = await User.findOne({
+      where: { user_email },
+      include: { model: Product, as: 'user_favorites' },
+    });
+    console.log(userExist);
+
+    if (userExist) {
+      return res.status(201).json(userExist);
+    }
+    const user = await User.create({
+      user_email,
+      user_name,
+      user_isAdmin: false,
+      user_password: 'Auth0AutenticatePassword',
+    });
+    console.log(user);
+    res.json(user);
+  } catch (error) {
+    res.status(500).json({ msg: error.message });
+  }
+};
+
 export const loginUser = async (req, res) => {
   const { user_email, user_password } = req.body;
   try {
@@ -142,7 +168,7 @@ export const loginUser = async (req, res) => {
       include: {
         model: Product,
         as: 'user_favorites',
-      }
+      },
     });
     if (!user) throw new Error('User or password incorrect');
     //Comparamos las contraseñas deshasheandolas

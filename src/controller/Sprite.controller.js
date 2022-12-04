@@ -6,16 +6,21 @@ import Product from '../models/Product.model.js';
 import Stock from '../models/Stock.model.js';
 export const postStripe = async (req, res) => {
   const { id, amount } = req.body;
-  const amountTotal = amount.reduce((a, b) => a + (b.product_price * b.product_count), 0);
+
+const amountTotal = amount.reduce(
+    (a, b) => a + b.product_price * b.product_count,
+    0
+  );
+
   try {
     const payment = await stripe.paymentIntents.create({
       amount: amountTotal,
       currency: 'ARS',
-      description: 'Gaming Keyboard',
+      description: 'Compra realizada en Henry Tech',
       payment_method: id,
       confirm: true,
     });
-    console.log(amount);
+      
     amount.forEach(async (product) => {
       const productDB = await Product.findByPk(product.product_id, { include: Stock });
 
@@ -26,8 +31,11 @@ export const postStripe = async (req, res) => {
         }
       })
     });
+
     res.json({ message: 'Succesfull payment', payment });
   } catch (error) {
     res.json({ message: error.raw.message });
   }
+
 };
+
