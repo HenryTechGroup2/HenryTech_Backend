@@ -63,7 +63,7 @@ export const postProduct = async (req, res) => {
     product_array_img,
     product_stock,
     product_brand,
-    product_views
+
   } = req.body;
   try {
     const newStock = await Stock.create({ stock_amount: product_stock });
@@ -79,6 +79,7 @@ export const postProduct = async (req, res) => {
       product_stock_id: newStock.stock_id,
       product_brand,
       product_views
+
     });
     res.status(201).json({
       product: newProduct,

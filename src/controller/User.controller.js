@@ -131,7 +131,7 @@ export const deleteUser = async (req, res) => {
     res.status(404).json({ msg: error });
   }
 };
-
+let x = 0;
 export const loginUserAuth0 = async (req, res) => {
   const { user_email, user_name } = req.body;
 
@@ -170,13 +170,14 @@ export const loginUser = async (req, res) => {
         as: 'user_favorites',
       },
     });
-    if (!user) throw new Error('User or password incorrect');
+    console.log(user);
+    if (!user) throw new Error('Usuario o contraseña incorrecta');
     //Comparamos las contraseñas deshasheandolas
     if (await bcrypt.compare(user_password, user.user_password)) {
       return res.json({ user });
     }
-    throw new Error('User or password incorrect');
+    throw new Error('Usuario o contraseña incorrecta');
   } catch (error) {
-    res.json(500).status({ message: error.message });
+    res.status(500).json({ message: error.message });
   }
 };

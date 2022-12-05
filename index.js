@@ -18,13 +18,12 @@ import {
 import { server, socketEvents } from './src/socket/Socket.js';
 import axios from 'axios';
 
-
 const port = 3001;
 
 async function DB_StartingData() {
   const users = await User.findAll();
   if (users.length === 0) {
-    userInitialData.forEach(async (user) => {
+    await userInitialData.forEach(async (user) => {
       await axios.post('http://localhost:3001/api/user/', user);
     });
     console.log('initial users created successfully');
@@ -32,7 +31,10 @@ async function DB_StartingData() {
 
   const allProduct = await Product.findAll();
   if (allProduct.length === 0) {
-    productInitialData.forEach(async (product) => {
+    await productInitialData.forEach(async (product) => {
+      if (allProduct.length === 1) {
+        console.log(product);
+      }
       await axios.post('http://localhost:3001/api/product/', product);
     });
     console.log('initial products created successfully');
@@ -58,8 +60,6 @@ async function main() {
     console.log(`listening on port ${port}`);
     await DB_StartingData();
     socketEvents();
-    await DB_StartingData();
-    console.log(`listening on port 3001`);
   } catch (e) {
     console.log('error', e);
   }
