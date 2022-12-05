@@ -13,7 +13,6 @@ const io = new SocketServer(server, {
 
 export const socketEvents = () => {
   io.on('connection', (socket) => {
-    console.log(socket);
     socket.on('@review/create', async (reviewData) => {
       console.log(reviewData);
       try {
@@ -27,7 +26,7 @@ export const socketEvents = () => {
 
     socket.on('@product/view', async (productId) => {
       try {
-        const productDB = Product.findByPk(productId);
+        const productDB = await Product.findByPk(productId);
         productDB.update({ product_views: ++productDB.product_views });
         io.emit(
           '@product/view/successful',
