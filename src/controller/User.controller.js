@@ -131,7 +131,7 @@ export const deleteUser = async (req, res) => {
     res.status(404).json({ msg: error });
   }
 };
-
+let x = 0;
 export const loginUserAuth0 = async (req, res) => {
   const { user_email, user_name } = req.body;
 
