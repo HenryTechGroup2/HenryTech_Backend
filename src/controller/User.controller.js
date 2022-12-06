@@ -1,6 +1,7 @@
 import Product from '../models/Product.model.js';
 import User from '../models/User.model.js';
 import bcrypt from 'bcryptjs';
+import Stock from '../models/Stock.model.js';
 //Faltaria implementacion de JSON WEB TOKENS PARA CONTROLAR EL TIEMPO DE SESION
 export const getAllUsers = async (req, res) => {
   try {
@@ -29,19 +30,22 @@ export const getUser = async (req, res) => {
   const { id } = req.params;
   try {
     const userId = await User.findByPk(id, {
-      include: {
-        model: Product,
-        as: 'user_favorites',
-        attributes: [
-          'product_id',
-          'product_name',
-          'product_description',
-          'product_price',
-          'product_rating',
-          'product_img',
-          'product_stock_id',
-        ],
-      },
+      include: [
+        {
+          model: Product,
+          as: 'user_favorites',
+          include: Stock,
+          attributes: [
+            'product_id',
+            'product_name',
+            'product_description',
+            'product_price',
+            'product_rating',
+            'product_img',
+            'product_stock_id',
+          ],
+        },
+      ],
     });
     return res.status(200).json(userId);
   } catch (error) {
@@ -93,12 +97,9 @@ export const postUser = async (req, res) => {
     user_shipping_address,
     user_isAdmin,
   } = req.body;
-  console.log(req.body);
   //Encriptamos la contraseña es una funcion asincrona el 10 significa que tan segura sera entre mas grande el numero mas segura pero tardara mas tiempo
   const password = await bcrypt.hash(user_password, 10);
-  console.log(password);
   try {
-    console.log(req.body);
     const newUser = await User.create({
       user_email,
       user_name,
@@ -140,7 +141,6 @@ export const loginUserAuth0 = async (req, res) => {
       where: { user_email },
       include: { model: Product, as: 'user_favorites' },
     });
-    console.log(userExist);
 
     if (userExist) {
       return res.status(201).json(userExist);
@@ -151,7 +151,6 @@ export const loginUserAuth0 = async (req, res) => {
       user_isAdmin: false,
       user_password: 'Auth0AutenticatePassword',
     });
-    console.log(user);
     res.json(user);
   } catch (error) {
     res.status(500).json({ msg: error.message });
@@ -165,12 +164,23 @@ export const loginUser = async (req, res) => {
       where: {
         user_email,
       },
-      include: {
-        model: Product,
-        as: 'user_favorites',
-      },
+      include: [
+        {
+          model: Product,
+          as: 'user_favorites',
+          include: Stock,
+          attributes: [
+            'product_id',
+            'product_name',
+            'product_description',
+            'product_price',
+            'product_rating',
+            'product_img',
+            'product_stock_id',
+          ],
+        },
+      ],
     });
-    console.log(user);
     if (!user) throw new Error('Usuario o contraseña incorrecta');
     //Comparamos las contraseñas deshasheandolas
     if (await bcrypt.compare(user_password, user.user_password)) {

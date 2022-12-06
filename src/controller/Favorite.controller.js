@@ -11,7 +11,6 @@ export const addFavorite = async (req, res) => {
       msg: `The product ${productDB.product_name} was added to ${userDB.user_name}'s favorites successfully`,
     });
   } catch (error) {
-    console.log(error);
     res.status(500).json({ msg: error });
   }
 };

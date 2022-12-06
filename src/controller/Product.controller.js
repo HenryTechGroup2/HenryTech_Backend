@@ -62,8 +62,8 @@ export const postProduct = async (req, res) => {
     product_img,
     product_array_img,
     product_stock,
+    product_views,
     product_brand,
-
   } = req.body;
   try {
     const newStock = await Stock.create({ stock_amount: product_stock });
@@ -78,15 +78,14 @@ export const postProduct = async (req, res) => {
       product_array_img,
       product_stock_id: newStock.stock_id,
       product_brand,
-      product_views
-
+      product_views,
     });
     res.status(201).json({
       product: newProduct,
       complete: 'Product is created succesfully',
     });
   } catch (error) {
-    return res.status(500).json({ msg: error });
+    return res.status(500).json({ msg: error.message });
   }
 };
 export const putProduct = async (req, res) => {
