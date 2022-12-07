@@ -60,16 +60,29 @@ export const putUser = async (req, res) => {
     user_name,
     user_password,
     user_phone,
+    user_password_confirm,
     user_payment_method,
     user_shipping_address,
-    user_isAdmin,
   } = req.body;
+  const user_isAdmin = false;
+  console.log(user_password_confirm);
   try {
-    await User.update(
+    const user = await User.findByPk(id);
+    if (!(await bcrypt.compare(user_password, user.user_password))) {
+      throw new Error('La contraseña es incorrecta');
+    }
+    //TODO CAMBIAR STIRPE POR TARJETA DE CREDITO
+    if (user_payment_method !== 'stripe') {
+      throw new Error('Metodo de pago incorrecto');
+    }
+    console.log(user);
+    const newPassword = await bcrypt.hash(user_password_confirm, 10);
+    console.log(newPassword);
+    await user.update(
       {
         user_email,
         user_name,
-        user_password,
+        user_password: newPassword,
         user_phone,
         user_payment_method,
         user_shipping_address,
@@ -81,9 +94,10 @@ export const putUser = async (req, res) => {
         },
       }
     );
-    res.status(200).json({ msg: 'The user was successfully updated' });
+    console.log('usuarios');
+    res.status(200).json({ msg: 'Datos actualizados correcta' });
   } catch (error) {
-    res.status(404).json({ msg: error });
+    res.status(401).json({ msg: error.message });
   }
 };
 
