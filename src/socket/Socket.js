@@ -13,12 +13,21 @@ const io = new SocketServer(server, {
 
 export const socketEvents = () => {
   io.on('connection', (socket) => {
-    console.log(socket);
     socket.on('@review/create', async (reviewData) => {
-      console.log(reviewData);
       try {
-        const newReview = await Review.create(...reviewData);
-        console.log(newReview);
+        const newReview = await Review.create(reviewData);
+        const productDb = await Product.findByPk(reviewData.review_product_id, {
+          include: { model: Review },
+        });
+        const newRating = Math.floor(
+          productDb.reviews
+            ?.map((review) => {
+              return review.review_score;
+            })
+            .reduce((a, b) => a + b, 0) / productDb.reviews.length
+        );
+
+        productDb.update({ product_rating: newRating });
         io.emit('@review/create/successful', newReview);
       } catch (error) {
         io.emit('@review/create/error', { err: error });
@@ -27,8 +36,16 @@ export const socketEvents = () => {
 
     socket.on('@product/view', async (productId) => {
       try {
-        const productDB = Product.findByPk(productId);
+        const productDB = await Product.findByPk(productId);
+
         productDB.update({ product_views: ++productDB.product_views });
+        console.log(
+          'Producto con id',
+          productId,
+          'visto :',
+          productDB.product_views,
+          'veces'
+        );
         io.emit(
           '@product/view/successful',
           `The product ${productDB.product_name} now has ${productDB.product_views} views`

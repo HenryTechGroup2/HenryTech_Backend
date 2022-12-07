@@ -1,20 +1,20 @@
 import nodemailer from 'nodemailer';
 export const postEmail = async (req, res) => {
-    const { user_email, user_name } = req.body;
-    const transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: 465,
-        secure: true,
-        auth: {
-            user: 'pateypazhuari@gmail.com',
-            pass: 'nmsxuqnfheiwvygu'
-        }
-    });
-    const mailOptions = {
-        from: "pateypazhuari@gmail.com",
-        to: `${user_email}, unsainamiel@gmail.com`,
-        subject: "Bienvenido a HenryTech!",
-        html: `
+  const { user_email, user_name } = req.body;
+  const transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
+    auth: {
+      user: 'pateypazhuari@gmail.com',
+      pass: 'nmsxuqnfheiwvygu',
+    },
+  });
+  const mailOptions = {
+    from: 'pateypazhuari@gmail.com',
+    to: `${user_email}`,
+    subject: 'Bienvenido a HenryTech!',
+    html: `
         <div style="margin:0;padding:0">
             <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;background:#ffffff">               
                 <tr>
@@ -60,14 +60,13 @@ export const postEmail = async (req, res) => {
                </tr>
             </table>
         </div>         
-        `
-    };
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            res.status(500).send(error.message);
-        } else {
-            res.status(200).json(req.body);
-        }
-    });
+        `,
+  };
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      res.status(500).send(error.message);
+    } else {
+      res.status(200).json(req.body);
+    }
+  });
 };
-
