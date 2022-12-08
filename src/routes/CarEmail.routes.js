@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import { postCarEmail } from '../controller/CarEmail.controller.js'
+import { postCartEmail } from '../controller/CartEmail.controller.js'
 const router = Router();
 
-router.post('/', postCarEmail);
+router.post('/', postCartEmail);
 
 export default router;
