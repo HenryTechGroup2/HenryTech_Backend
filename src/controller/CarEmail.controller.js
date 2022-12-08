@@ -1,5 +1,5 @@
 import nodemailer from 'nodemailer';
-export const postEmail = async (req, res) => {
+export const postCarEmail = async (req, res) => {
   const { user_email, user_name } = req.body;
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
@@ -36,11 +36,10 @@ export const postEmail = async (req, res) => {
                                                 <tr>
                                                     <td style="padding:0;color:#333">
                                                         <h3 style="font-size:18px;margin:0 0 20px 0;font-weight:400;font-family:'Montserrat',sans-serif">
-                                                            Hola ${user_name} te damos la bienvenida a HenryTech!
+                                                        Hola ${user_name} tienes productos en tu carrito!
                                                         </h3>
                                                         <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-weight:300;font-family:'Montserrat',sans-serif">
-                                                            Estamos muy agradecidos de que hayas escogido esta empresa para tus futuras compras gamers, 
-                                                            esperamos que encuentres los productos que estas buscando al mejor precio y calidad.
+                                                            Recuerda que tienes productos almacenados en tu carrito, ven a buscarlos antes que se agoten 😞.
                                                         </p>
                                                         <p style="margin:0 0 12px 0;font-size:14px;line-height:24px;font-family:'Montserrat',sans-serif">
                                                             El Staff de HenryTech
