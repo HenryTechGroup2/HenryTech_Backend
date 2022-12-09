@@ -1,14 +1,30 @@
 import Order from '../models/Order.model.js';
-
-export const getOrder = async (req, res) => {
+import Product from '../models/Product.model.js';
+import Invoice from '../models/Invoice.model.js';
+export const getOrderOfUser = async (req, res) => {
   const { id } = req.params;
   try {
-    const orderId = await Order.findByPk(id);
+    const orderId = await Order.findAll({
+      where: {
+        order_user_id: id
+      },
+      include: Invoice
+    });
     return res.status(200).json(orderId);
   } catch (error) {
     return res.status(404).json({ msg: error });
   }
 };
+export const getAllOrders = async (req, res) => {
+  try {
+    const allOrders = await Order.findAll({
+      include: Invoice
+    });
+    return res.status(200).json(allOrders);
+  } catch (error) {
+    return res.status(404).json({ msg: error });
+  }
+}
 
 export const putOrder = async (req, res) => {
   const { id } = req.params;
@@ -20,7 +36,7 @@ export const putOrder = async (req, res) => {
       },
       {
         where: {
-          order_id: Number(id),
+          order_id: id,
         },
       }
     );
@@ -30,13 +46,22 @@ export const putOrder = async (req, res) => {
   }
 };
 
+
+
 export const postOrder = async (req, res) => {
-  const { order_status } = req.body;
+  const { order_status, order_products, order_total } = req.body;
 
   try {
     const newOrder = await Order.create({
       order_status,
+      order_total
     });
+
+    order_products.forEach(async (product) => {
+      const productDB = await Product.findByPk(product.id);
+      await newOrder.addProduct(productDB, { through: { product_order_amount: product.amount } });
+    });
+
     res.status(200).json({
       order: newOrder,
       complete: 'Order is created succesfully',
