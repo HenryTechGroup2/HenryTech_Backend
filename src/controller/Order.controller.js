@@ -54,7 +54,8 @@ export const postOrder = async (req, res) => {
   try {
     const newOrder = await Order.create({
       order_status,
-      order_total
+      order_total,
+      order_user_id
     });
 
     order_products.forEach(async (product) => {
