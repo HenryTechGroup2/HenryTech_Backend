@@ -65,20 +65,14 @@ export const postProduct = async (req, res) => {
     product_views,
     product_brand,
   } = req.body;
+
+  const productData = req.body;
   try {
-    const newStock = await Stock.create({ stock_amount: product_stock });
+    const newStock = await Stock.create({ stock_amount: productData.product_stock });
+    delete productData.product_stock;
     const newProduct = await Product.create({
-      product_name,
-      product_description,
-      product_price,
-      product_ofer,
-      product_rating,
-      product_category,
-      product_img,
-      product_array_img,
+      ...productData,
       product_stock_id: newStock.stock_id,
-      product_brand,
-      product_views,
     });
     res.status(201).json({
       product: newProduct,
