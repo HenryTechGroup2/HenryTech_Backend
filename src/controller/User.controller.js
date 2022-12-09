@@ -101,6 +101,39 @@ export const putUser = async (req, res) => {
   }
 };
 
+export const adminUser = async (req, res) => {
+  const { user_isAdmin, user_id } = req.body;
+  console.log(user_isAdmin);
+  try {
+    const user = await User.findByPk(user_id);
+    console.log(user);
+    await user.update({ user_isAdmin });
+    console.log(user);
+    user_isAdmin
+      ? res.json({
+          msg: `El usuario ${user.user_name} es un nuevo administrador`,
+        })
+      : res.json({ msg: `${user.user_name} dejo de ser administrador` });
+  } catch (error) {
+    res.status(500).json({ msg: error.message });
+  }
+};
+export const userDesabilited = async (req, res) => {
+  const { user_suspense, user_id } = req.body;
+  try {
+    const user = await User.findByPk(user_id);
+    await user.update({ user_suspense });
+    user_suspense
+      ? res.json({
+          msg: `El usuario ${user.user_name} estara deshabilitado temporalmente`,
+        })
+      : res.json({
+          msg: `El usuario ${user.user_name} a vuelto a la actividad`,
+        });
+  } catch (error) {
+    res.status(500).json({ msg: error.message });
+  }
+};
 export const postUser = async (req, res) => {
   const {
     user_email,

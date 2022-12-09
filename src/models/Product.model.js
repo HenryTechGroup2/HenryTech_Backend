@@ -1424,6 +1424,10 @@ const Product = sequelize.define(
       type: DataTypes.TEXT,
       allowNull: false,
     },
+    product_suspense: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+    },
     product_array_img: {
       type: DataTypes.ARRAY(DataTypes.TEXT),
       defaultValue: [],

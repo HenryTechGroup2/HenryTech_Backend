@@ -7,35 +7,37 @@ import Stock from '../models/Stock.model.js';
 export const postStripe = async (req, res) => {
   const { id, amount } = req.body;
 
-const amountTotal = amount.reduce(
+  const amountTotal = amount.reduce(
     (a, b) => a + b.product_price * b.product_count,
     0
   );
 
   try {
     const payment = await stripe.paymentIntents.create({
-      amount: amountTotal,
+      amount: parseInt(amountTotal),
       currency: 'ARS',
       description: 'Compra realizada en Henry Tech',
       payment_method: id,
       confirm: true,
     });
-      
-    amount.forEach(async (product) => {
-      const productDB = await Product.findByPk(product.product_id, { include: Stock });
 
-      
-      await Stock.update({ stock_amount: productDB.stock.stock_amount - product.product_count }, {
-        where: {
-          stock_id: productDB.stock.stock_id
+    amount.forEach(async (product) => {
+      const productDB = await Product.findByPk(product.product_id, {
+        include: Stock,
+      });
+
+      await Stock.update(
+        { stock_amount: productDB.stock.stock_amount - product.product_count },
+        {
+          where: {
+            stock_id: productDB.stock.stock_id,
+          },
         }
-      })
+      );
     });
 
     res.json({ message: 'Succesfull payment', payment });
   } catch (error) {
     res.json({ message: error.raw.message });
   }
-
 };
-
