@@ -18,12 +18,13 @@ export const postStripe = async (req, res) => {
   try {
 
     const payment = await stripe.paymentIntents.create({
-      amount: amountTotal,
+      amount: parseInt(amountTotal),
       currency: 'ARS',
       description: 'Compra realizada en Henry Tech',
       payment_method: id,
       confirm: true,
     });
+
 
     const order_products = [];
     let invoice_detail = '';
@@ -36,6 +37,7 @@ export const postStripe = async (req, res) => {
           stock_id: productDB.stock.stock_id
         }
       });
+
     });
 
     const newOrder = await axios.post('http://localhost:3001/api/order/', {
@@ -55,5 +57,4 @@ export const postStripe = async (req, res) => {
   } catch (error) {
     res.json({ message: error.raw.message });
   }
-
 };
