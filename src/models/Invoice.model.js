@@ -7,14 +7,19 @@ const Invoice = sequelize.define('invoice', {
     autoIncrement: true,
     primaryKey: true,
   },
-  invoice_amount: {
-    type: DataTypes.DECIMAL(12, 2),
+  invoice_detail: {
+    type: DataTypes.STRING,
     allowNull: false,
   },
   invoice_shipping: {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  invoice_total: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
+
 },
   {
     timestamps: false,

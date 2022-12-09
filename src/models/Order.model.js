@@ -8,7 +8,11 @@ const Order = sequelize.define('order', {
     autoIncrement: true,
   },
   order_status: {
-    type: DataTypes.ENUM('Pending', 'Paid', 'In Shipping', 'Completed'),
+    type: DataTypes.ENUM( 'Paid', 'In Shipping', 'Completed'),
+    allowNull: false
+  },
+  order_total: {
+    type: DataTypes.INTEGER,
     allowNull: false
   }
 },
