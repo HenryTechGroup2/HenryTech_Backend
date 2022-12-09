@@ -8,7 +8,7 @@ export const getOrderOfUser = async (req, res) => {
       where: {
         order_user_id: id
       },
-      include: Invoice
+      include: [Invoice, { model: Product, attributes: ['product_id'] }]
     });
     return res.status(200).json(orderId);
   } catch (error) {
@@ -18,7 +18,7 @@ export const getOrderOfUser = async (req, res) => {
 export const getAllOrders = async (req, res) => {
   try {
     const allOrders = await Order.findAll({
-      include: Invoice
+      include: [Invoice, { model: Product, attributes: ['product_id'] }]
     });
     return res.status(200).json(allOrders);
   } catch (error) {
