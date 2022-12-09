@@ -4,8 +4,11 @@ const stripe = new Stripe(
 );
 import Product from '../models/Product.model.js';
 import Stock from '../models/Stock.model.js';
+import Invoice from '../models/Invoice.model.js';
+import axios from 'axios';
+
 export const postStripe = async (req, res) => {
-  const { id, amount } = req.body;
+  const { id, amount, userid } = req.body;
 
   const amountTotal = amount.reduce(
     (a, b) => a + b.product_price * b.product_count,
@@ -13,6 +16,7 @@ export const postStripe = async (req, res) => {
   );
 
   try {
+
     const payment = await stripe.paymentIntents.create({
       amount: parseInt(amountTotal),
       currency: 'ARS',
@@ -21,21 +25,34 @@ export const postStripe = async (req, res) => {
       confirm: true,
     });
 
+
+    const order_products = [];
+    let invoice_detail = '';
     amount.forEach(async (product) => {
-      const productDB = await Product.findByPk(product.product_id, {
-        include: Stock,
+      order_products.push({ id: product.product_id, amount: product.product_count })
+      invoice_detail = invoice_detail.concat(`${product.product_count} - ${product.product_name} `);
+      const productDB = await Product.findByPk(product.product_id, { include: Stock });
+      await Stock.update({ stock_amount: productDB.stock.stock_amount - product.product_count }, {
+        where: {
+          stock_id: productDB.stock.stock_id
+        }
       });
 
-      await Stock.update(
-        { stock_amount: productDB.stock.stock_amount - product.product_count },
-        {
-          where: {
-            stock_id: productDB.stock.stock_id,
-          },
-        }
-      );
     });
 
+    const newOrder = await axios.post('http://localhost:3001/api/order/', {
+      order_status: 'Paid',
+      order_products: order_products,
+      order_total: amountTotal,
+      order_user_id: userid
+    })
+    const newInvoice = await axios.post('http://localhost:3001/api/invoice/', {
+      invoice_total: amountTotal,
+      invoice_shipping: 'Cerro la colina 22',
+      invoice_detail,
+      invoice_user_id: userid,
+      invoice_order_id: newOrder.data.order.order_id
+    })
     res.json({ message: 'Succesfull payment', payment });
   } catch (error) {
     res.json({ message: error.raw.message });

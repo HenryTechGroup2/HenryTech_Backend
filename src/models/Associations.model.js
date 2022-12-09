@@ -11,7 +11,7 @@ export const Product_Order = sequelize.define('product_order',
     {
         product_order_amount: {
             type: DataTypes.INTEGER,
-            allowNull: false,
+            allowNull: true,
             validate: {
                 min: 1,
                 max: 10

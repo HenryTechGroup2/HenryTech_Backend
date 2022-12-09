@@ -152,7 +152,7 @@ export const products = [
   },
   {
     product_name: 'Motherboard Asus H610m-k D4 Intel 12va Gen Lga1700 Ddr4 Pc',
-    product_brand: 'Asus',
+    product_brand: 'Intel',
     product_description:
       'Las placas base de la serie ASUS Prime están diseñadas por expertos para liberar todo el potencial de los procesadores Intel® de 12.ª generación. Con un diseño de potencia robusto, soluciones de refrigeración integrales y opciones de ajuste inteligentes, Prime H610 ofrece a los usuarios y a los constructores de PC una gama de opciones de ajuste de rendimiento a través de funciones intuitivas de software y firmware. Los controles integrales forman la base de la serie ASUS Prime. La placa base Prime H610 incluye herramientas flexibles para ajustar cada aspecto de su sistema, lo que permite que los ajustes de rendimiento se adapten perfectamente a su forma de trabajar para maximizar la productividad.',
     product_price: 25334,
@@ -923,7 +923,7 @@ export const products = [
   },
   {
     product_name: 'Placa Madre Asus Prime B365 Motherboard 1151 Intel 8va 9na',
-    product_brand: 'Asus',
+    product_brand: 'Intel',
     product_description:
       'CPU: Intel® Socket 1151 para procesadores Core™ i7/Core™ i5/Core™ i3/Pentium®/Celeron® de 9.ª y 8.ª generación. Compatible con CPU Intel® de 14 nm. Chipset: Intel® B365. Memoria: Conjunto de chips Intel® B365. 4 módulos DIMM, máx. 64 GB, DDR4 2666/2400/2133 MHz sin ECC, memoria sin búfer. Slots de Expansión: 1 x PCIe 3.0 x16 (x16 mode) 2 x PCIe 3.0/2.0 x1. Puertos USB: 7 x USB 3.1 Gen 1 up to 5Gbps port(s) (5 at back panel, , 4 x Type-A+1 x Type-C, 2 at mid-board) 4 x USB 2.0/1.1 port(s) (4 at mid-board)',
     product_price: 14000,
@@ -943,7 +943,7 @@ export const products = [
   },
   {
     product_name: 'Motherboard Asus Prime A320m-k Am4 Ddr4 Usb 3.0 Hdmi A320',
-    product_brand: 'Asus',
+    product_brand: 'AMD',
     product_description:
       'Construida para Durar. ASUS es la marca líder en tarjetas madre del mundo, renombrada por sus diseños únicos. Nuestras pruebas exhaustivas sobrepasan el estándar de la industria, respaldados por componentes de alta calidad para una protección excepcional en situaciones reales. Nuestras tarjetas madre están probadas para ser compatibles con más de 1,000 componentes y dispositivos, y cada nuevo modelo atraviesa por un mínimo de 8,000 horas de estrictas validaciones. ASUS te ofrece la seguridad de saber que tu tarjeta madre está lista para todo tipo de ambientes y aplicaciones. Al escoger ASUS, también escoges la libertad de seleccionar componentes para tener una experiencia de PC DIY sin problemas! ASUS Prime es la siguiente evolución de la tarjeta madre ASUS, nacida con un pedigree que data de 1989. Nuestro equipo de ingenieros de clase mundial son apasionados en darle el poder a todo el mundo de disfrutar de los beneficios de la personalización y los ajustes, y la fuerza motriz detrás del desarrollo de Prime es el hacer los controles avanzados fácilmente accesibles - maximizando rendimiento, estabilidad y compatibilidad para tener las mejores experiencias de armado de PC DIY. En resumen: es hora de Prime. Las tarjetas madre de la serie PRIME A320 están diseñadas con 5X Protection III, líder en la industria, que emplea los mejores componentes, un diseño de circuito excelente y estándares exigentes para garantizar la calidad y la durabilidad a largo plazo de tu tarjeta madre. Eso significa una protección y estabilidad excepcionales para su construcción, gracias a años de experiencia en ingeniería de la marca de tarjetas madre líder en el mundo. SafeSlot Core es la ranura PCIe exclusiva de ASUS. Con un diseño reforzado que se ancla a la tarjeta madre con un gancho especial, Safeslot Core proporciona una retención 1.6 veces mayor y una resistencia al corte mayor de 1.3 veces que las ranuras de expansión estándar. SafeSlot Core es la ranura PCIe exclusiva de ASUS. Con un diseño reforzado que se ancla a la tarjeta madre con un gancho especial, Safeslot Core proporciona una retención 1.6 veces mayor y una resistencia al corte mayor de 1.3 veces que las ranuras de expansión estándar. LANGuard. Rendimiento mejorado. 2.5x más tolerancia a las sobretensiones. ASUS LANGuard es protección de redes a nivel hardware que emplea tecnología de emparejamiento de señal y capacitores anti-EMI premium montados en la superficie para asegurar una conexión más confiable y mejor rendimiento, además de componentes protegidos electrostaticamente contra la sobretensión para una mejor tolerancia a la electricidad estática y protección mejorada contra las sobre tensiones.',
     product_price: 15000,
@@ -963,7 +963,7 @@ export const products = [
   },
   {
     product_name: 'Mother Msi Mpg X570 Gaming Plus Rgb Am4 128gb Pci 4.0 Box',
-    product_brand: 'MSI',
+    product_brand: 'AMD',
     product_description:
       'Satisfaciendo a los jugadores con lo que realmente necesitan, MPG X570 GAMING PLUS está equipada con un disipador de calor extendido, disipador de calor Frozr, Core boost, Lightning Gen4 M.2, M.2 Shield Frozr accessory, Turbo USB y el último Dragon Center de MSI. Compatible con la 2ª y 3ª Gen de procesadores AMD Ryzen™ / Ryzen™ con Radeon™ Vega Graphics para socket AM4. Compatible con memoria DDR4. Lightning Fast Game PCIe 4.0, Lightning Gen4 x4 M.2 con M.2 Shield Frozr, StoreMI, AMD Turbo USB 3.2 GEN2. Diseño Frozr Heatsink: Diseñado con el ventilador patentado y doble rodamiento para proporcionar el mejor rendimiento para los jugadores entusiastas. Set Core Power Free: Diseño de disipación extendido, Core Boost, Digital PWM IC, 8+4 pin CPU power connector, Game Boost, DDR4 Boost. MYSTIC LIGHT: 16.8 millones de colores / 29 efectos controlados en un solo clic. MYSTIC LIGHT EXTENSION compatible con tiras RGB y RAINBOW LED. AUDIO BOOST 4: Recompensa tus oídos con la calidad de sonido de estudio para la experiencia de juego más inmersiva. Dragon Center: Un nuevo software que integra todas las herramientas de MSI, como GAME MODE, VOICE BOOST, LIVE UPDATE con una interfaz de usuario fácil de usar.',
     product_price: 90000,
@@ -984,7 +984,7 @@ export const products = [
   },
   {
     product_name: 'Motherboard Am4 - Asrock B450 Steel Legend Mexx 1',
-    product_brand: 'ASRock',
+    product_brand: 'AMD',
     product_description: 'Motherboard AM4 - Asrock B450 STEEL LEGEND',
     product_price: 34400,
     product_ofer: false,
@@ -1690,70 +1690,3 @@ export const user = [
     user_isAdmin: false,
   },
 ];
-export const review = [
-  {
-    review_title: 'Mal estado',
-    review_body: 'El producto me llego todo roto XD',
-    review_score: '2',
-  },
-  {
-    review_title: 'Buen estado',
-    review_body: 'El producto me llego en buen estado',
-    review_score: '3',
-  },
-  {
-    review_title: 'Envio',
-    review_body: 'La compra me llogo super rapido y en perfecto estado',
-    review_score: '5',
-  },
-];
-export const invoice = [
-  {
-    invoice_amount: '20000',
-    invoice_shipping: 'Mercado Pago',
-  },
-  {
-    invoice_amount: '15600',
-    invoice_shipping: 'Visa',
-  },
-  {
-    invoice_amount: '836200',
-    invoice_shipping: 'American Express',
-  },
-  {
-    invoice_amount: '125000',
-    invoice_shipping: 'Visa',
-  },
-  {
-    invoice_amount: '88000',
-    invoice_shipping: 'Maestro',
-  },
-  {
-    invoice_amount: '32400',
-    invoice_shipping: 'Mastercard',
-  },
-  {
-    invoice_amount: '79000',
-    invoice_shipping: 'Maestro',
-  },
-];
-
-// MAQUETA DE PRODUCTO
-// {
-//   product_stock_id: 0,
-//   product_name: '',
-//   product_description: '',
-//   product_price: 0,
-//   product_ofer: false,
-//   product_rating: 1,
-//   product_category: '',
-//   product_img: '',
-//   product_array_img: [
-//     '',
-//     '',
-//     '',
-//     '',
-//     ''
-//   ],
-//   product_views: 0
-// },

@@ -11,12 +11,10 @@ import { Server } from 'socket.io';
 import {
   user as userInitialData,
   products as productInitialData,
-  review as reviewInitialData,
-  invoice as invoiceInitialData,
-  user,
 } from './data/data.js';
 import { server, socketEvents } from './src/socket/Socket.js';
 import axios from 'axios';
+import productsFeaturesSetter from './data/dataFeatures.js'
 
 const port = 3001;
 
@@ -32,22 +30,11 @@ async function DB_StartingData() {
 
     const allProduct = await Product.findAll();
     if (allProduct.length === 0) {
-      productInitialData.forEach(async (product) => {
+      const productInitialDataWithFeatures = productsFeaturesSetter(productInitialData);
+      productInitialDataWithFeatures.forEach(async (product) => {
         await axios.post('http://localhost:3001/api/product/', product);
       });
       console.log('initial products created successfully');
-    }
-
-    const allReview = await Review.findAll();
-    if (allReview.length === 0) {
-      let allReviews = await Review.bulkCreate(reviewInitialData);
-      console.log('initial reviews created successfully');
-    }
-
-    const allInvoice = await Invoice.findAll();
-    if (allInvoice.length === 0) {
-      let allInvoices = await Invoice.bulkCreate(invoiceInitialData);
-      console.log('initial invoices created successfully');
     }
   } catch (error) {
     console.log(error.message);
@@ -56,7 +43,7 @@ async function DB_StartingData() {
 
 async function main() {
   try {
-    await sequelize.sync({ force: true });
+    await sequelize.sync({ force: false });
     server.listen(port);
     console.log(`listening on port ${port}`);
     await DB_StartingData();
