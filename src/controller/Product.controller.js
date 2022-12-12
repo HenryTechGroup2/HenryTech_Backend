@@ -85,7 +85,9 @@ export const postProduct = async (req, res) => {
 
   const productData = req.body;
   try {
-    const newStock = await Stock.create({ stock_amount: productData.product_stock });
+    const newStock = await Stock.create({
+      stock_amount: productData.product_stock,
+    });
     delete productData.product_stock;
     const newProduct = await Product.create({
       ...productData,
@@ -93,7 +95,7 @@ export const postProduct = async (req, res) => {
     });
     res.status(201).json({
       product: newProduct,
-      complete: 'Product is created succesfully',
+      complete: 'Producto creado con exito',
     });
   } catch (error) {
     return res.status(500).json({ msg: error.message });
@@ -128,7 +130,7 @@ export const putProduct = async (req, res) => {
       product_array_img,
     });
     await productDB_stock.update({ stock_amount: product_stock });
-    res.status(201).json({ msg: 'The product was successfully updated' });
+    res.status(201).json({ msg: 'Producto actualizado con exito' });
   } catch (error) {
     res.status(500).json({ msg: error });
   }
@@ -147,7 +149,7 @@ export const deleteProduct = async (req, res) => {
       },
     });
     await productDB.destroy();
-    res.status(200).json({ msg: 'The product was deleted successfully' });
+    res.status(200).json({ msg: 'Producto eliminado con exito' });
   } catch (error) {
     res.status(500).json({ msg: error });
   }

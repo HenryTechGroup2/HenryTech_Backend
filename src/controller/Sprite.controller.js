@@ -16,7 +16,6 @@ export const postStripe = async (req, res) => {
   );
 
   try {
-
     const payment = await stripe.paymentIntents.create({
       amount: parseInt(amountTotal),
       currency: 'ARS',
@@ -24,37 +23,45 @@ export const postStripe = async (req, res) => {
       payment_method: id,
       confirm: true,
     });
-
-
+    console.log(payment);
     const order_products = [];
     let invoice_detail = '';
-    amount.forEach(async (product) => {
-      order_products.push({ id: product.product_id, amount: product.product_count })
-      invoice_detail = invoice_detail.concat(`${product.product_count} - ${product.product_name} `);
-      const productDB = await Product.findByPk(product.product_id, { include: Stock });
-      await Stock.update({ stock_amount: productDB.stock.stock_amount - product.product_count }, {
-        where: {
-          stock_id: productDB.stock.stock_id
-        }
+    await amount.forEach(async (product) => {
+      order_products.push({
+        id: product.product_id,
+        amount: product.product_count,
       });
-
+      invoice_detail = invoice_detail.concat(
+        `${product.product_count}  ${product.product_name} ${product.product_price} -`
+      );
+      const productDB = await Product.findByPk(product.product_id, {
+        include: Stock,
+      });
+      await Stock.update(
+        { stock_amount: productDB.stock.stock_amount - product.product_count },
+        {
+          where: {
+            stock_id: productDB.stock.stock_id,
+          },
+        }
+      );
     });
-
-    const newOrder = await axios.post('http://localhost:3001/api/order/', {
-      order_status: 'Paid',
+    const newOrder = await axios.post('http://localhost:3001/api/order', {
+      order_status: 'Pagado',
       order_products: order_products,
       order_total: amountTotal,
-      order_user_id: userid
-    })
-    const newInvoice = await axios.post('http://localhost:3001/api/invoice/', {
+      order_user_id: userid,
+    });
+    const newInvoice = await axios.post('http://localhost:3001/api/invoice', {
       invoice_total: amountTotal,
       invoice_shipping: 'Cerro la colina 22',
       invoice_detail,
       invoice_user_id: userid,
-      invoice_order_id: newOrder.data.order.order_id
-    })
+      invoice_order_id: newOrder.data.order.order_id,
+    });
+    console.log(newOrder, newInvoice, payment);
     res.json({ message: 'Succesfull payment', payment });
   } catch (error) {
-    res.json({ message: error.raw.message });
+    res.status(500).json({ message: error.message });
   }
 };

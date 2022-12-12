@@ -14,7 +14,7 @@ import {
 } from './data/data.js';
 import { server, socketEvents } from './src/socket/Socket.js';
 import axios from 'axios';
-import productsFeaturesSetter from './data/dataFeatures.js'
+import productsFeaturesSetter from './data/dataFeatures.js';
 
 const port = 3001;
 
@@ -30,7 +30,8 @@ async function DB_StartingData() {
 
     const allProduct = await Product.findAll();
     if (allProduct.length === 0) {
-      const productInitialDataWithFeatures = productsFeaturesSetter(productInitialData);
+      const productInitialDataWithFeatures =
+        productsFeaturesSetter(productInitialData);
       productInitialDataWithFeatures.forEach(async (product) => {
         await axios.post('http://localhost:3001/api/product/', product);
       });
@@ -43,7 +44,7 @@ async function DB_StartingData() {
 
 async function main() {
   try {
-    await sequelize.sync({ force: false });
+    await sequelize.sync({ force: true });
     server.listen(port);
     console.log(`listening on port ${port}`);
     await DB_StartingData();

@@ -3,6 +3,7 @@ import app from '../App.js';
 import http from 'http';
 import Review from '../models/Review.model.js';
 import Product from '../models/Product.model.js';
+import { MsgPost, MsgReceived } from '../models/Message.model.js';
 
 export const server = http.createServer(app);
 const io = new SocketServer(server, {
@@ -52,6 +53,36 @@ export const socketEvents = () => {
         );
       } catch (error) {
         io.emit('@product/view/error', { err: error });
+      }
+    });
+    socket.on('@client/post', async ({ msgPost, id }) => {
+      console.log(msgPost);
+      try {
+        const msg = await MsgPost.create({
+          msgpost_post: msgPost,
+          userUserId: id,
+        });
+        io.emit('@server/post', msg);
+      } catch (error) {
+        console.log(error.message);
+      }
+    });
+    socket.on('@client/received', async ({ msgreceived_post, id, idPost }) => {
+      try {
+        console.log(msgreceived_post, id, idPost);
+        const msg = await MsgReceived.create({
+          msgreceived_post,
+          userUserId: id,
+          msgpostMsgpostId: idPost,
+        });
+        // const msgPost = await MsgPost.findByPk(idPost);
+        console.log(msg);
+        // console.log(msgPost);
+        // msg.addMsgPost(idPost);
+
+        io.emit('@server/received', msg);
+      } catch (error) {
+        console.log(error.message);
       }
     });
   });

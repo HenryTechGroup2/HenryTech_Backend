@@ -8,10 +8,8 @@ import routerInvoice from './routes/Invoice.routes.js';
 import routerFavorites from './routes/Favorite.routes.js';
 import routerSprite from './routes/Stripe.routes.js';
 
-import routerEmail from './routes/Email.routes.js';
-=======
-import routerSendEmail from "./routes/SendEmail.routes.js";
-import routerCartEmail from "./routes/CarEmail.routes.js";
+import routerSendEmail from './routes/SendEmail.routes.js';
+import routerCartEmail from './routes/CarEmail.routes.js';
 
 import cors from 'cors';
 import morgan from 'morgan';
