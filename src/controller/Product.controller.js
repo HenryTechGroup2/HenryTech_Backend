@@ -1,5 +1,5 @@
 import Product from '../models/Product.model.js';
-import { Op } from 'sequelize';
+import { Op, where } from 'sequelize';
 import Stock from '../models/Stock.model.js';
 import Review from '../models/Review.model.js';
 import User from '../models/User.model.js';
@@ -37,7 +37,24 @@ export const getProducts = async (req, res) => {
     return res.status(500).json({ msg: error.message });
   }
 };
-
+export const suspenseProduct = async (req, res) => {
+  const { product_suspense, product_id } = req.body;
+  try {
+    const product = await Product.findByPk(product_id);
+    if (!product) throw new Error('Producto no encontrado');
+    await product.update({ product_suspense });
+    product_suspense
+      ? res.send(`El producto ${product.product_name.slice(0, 20)} en suspenso`)
+      : res.send(
+          `El product ${product.product_name.slice(
+            0,
+            20
+          )} volvio a estar disponible`
+        );
+  } catch (error) {
+    res.status(401).json({ message: error.message });
+  }
+};
 export const getProduct = async (req, res) => {
   const { id } = req.params;
   try {
@@ -65,24 +82,20 @@ export const postProduct = async (req, res) => {
     product_views,
     product_brand,
   } = req.body;
+
+  const productData = req.body;
   try {
-    const newStock = await Stock.create({ stock_amount: product_stock });
+    const newStock = await Stock.create({
+      stock_amount: productData.product_stock,
+    });
+    delete productData.product_stock;
     const newProduct = await Product.create({
-      product_name,
-      product_description,
-      product_price,
-      product_ofer,
-      product_rating,
-      product_category,
-      product_img,
-      product_array_img,
+      ...productData,
       product_stock_id: newStock.stock_id,
-      product_brand,
-      product_views,
     });
     res.status(201).json({
       product: newProduct,
-      complete: 'Product is created succesfully',
+      complete: 'Producto creado con exito',
     });
   } catch (error) {
     return res.status(500).json({ msg: error.message });
@@ -117,7 +130,7 @@ export const putProduct = async (req, res) => {
       product_array_img,
     });
     await productDB_stock.update({ stock_amount: product_stock });
-    res.status(201).json({ msg: 'The product was successfully updated' });
+    res.status(201).json({ msg: 'Producto actualizado con exito' });
   } catch (error) {
     res.status(500).json({ msg: error });
   }
@@ -136,7 +149,7 @@ export const deleteProduct = async (req, res) => {
       },
     });
     await productDB.destroy();
-    res.status(200).json({ msg: 'The product was deleted successfully' });
+    res.status(200).json({ msg: 'Producto eliminado con exito' });
   } catch (error) {
     res.status(500).json({ msg: error });
   }

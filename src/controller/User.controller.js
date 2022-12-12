@@ -2,6 +2,9 @@ import Product from '../models/Product.model.js';
 import User from '../models/User.model.js';
 import bcrypt from 'bcryptjs';
 import Stock from '../models/Stock.model.js';
+import Invoice from '../models/Invoice.model.js';
+import Order from '../models/Order.model.js';
+import { MsgPost, MsgReceived } from '../models/Message.model.js';
 //Faltaria implementacion de JSON WEB TOKENS PARA CONTROLAR EL TIEMPO DE SESION
 export const getAllUsers = async (req, res) => {
   try {
@@ -25,12 +28,47 @@ export const getAllUsers = async (req, res) => {
     return res.status(404).json({ msg: error });
   }
 };
-
+export const getMessagesUser = async (req, res) => {
+  try {
+    const user = await User.findAll({
+      include: [
+        {
+          model: MsgPost,
+          include: MsgReceived,
+        },
+        {
+          model: Product,
+          as: 'user_favorites',
+          attributes: [
+            'product_id',
+            'product_name',
+            'product_description',
+            'product_price',
+            'product_rating',
+            'product_img',
+            'product_stock_id',
+          ],
+        },
+      ],
+    });
+    return res.json(user);
+  } catch (error) {
+    return res.status(404).json({ msg: error });
+  }
+};
 export const getUser = async (req, res) => {
   const { id } = req.params;
   try {
     const userId = await User.findByPk(id, {
       include: [
+        {
+          model: Invoice,
+          include: Order,
+        },
+        {
+          model: MsgPost,
+          include: MsgReceived,
+        },
         {
           model: Product,
           as: 'user_favorites',
@@ -101,6 +139,39 @@ export const putUser = async (req, res) => {
   }
 };
 
+export const adminUser = async (req, res) => {
+  const { user_isAdmin, user_id } = req.body;
+  console.log(user_isAdmin);
+  try {
+    const user = await User.findByPk(user_id);
+    console.log(user);
+    await user.update({ user_isAdmin });
+    console.log(user);
+    user_isAdmin
+      ? res.json({
+          msg: `El usuario ${user.user_name} es un nuevo administrador`,
+        })
+      : res.json({ msg: `${user.user_name} dejo de ser administrador` });
+  } catch (error) {
+    res.status(500).json({ msg: error.message });
+  }
+};
+export const userDesabilited = async (req, res) => {
+  const { user_suspense, user_id } = req.body;
+  try {
+    const user = await User.findByPk(user_id);
+    await user.update({ user_suspense });
+    user_suspense
+      ? res.json({
+          msg: `El usuario ${user.user_name} estara deshabilitado temporalmente`,
+        })
+      : res.json({
+          msg: `El usuario ${user.user_name} a vuelto a la actividad`,
+        });
+  } catch (error) {
+    res.status(500).json({ msg: error.message });
+  }
+};
 export const postUser = async (req, res) => {
   const {
     user_email,
@@ -146,14 +217,32 @@ export const deleteUser = async (req, res) => {
     res.status(404).json({ msg: error });
   }
 };
-let x = 0;
 export const loginUserAuth0 = async (req, res) => {
   const { user_email, user_name } = req.body;
 
   try {
     const userExist = await User.findOne({
       where: { user_email },
-      include: { model: Product, as: 'user_favorites' },
+      include: [
+        {
+          model: Invoice,
+          include: Order,
+        },
+        {
+          model: Product,
+          as: 'user_favorites',
+          include: Stock,
+          attributes: [
+            'product_id',
+            'product_name',
+            'product_description',
+            'product_price',
+            'product_rating',
+            'product_img',
+            'product_stock_id',
+          ],
+        },
+      ],
     });
 
     if (userExist) {
@@ -179,6 +268,11 @@ export const loginUser = async (req, res) => {
         user_email,
       },
       include: [
+        {
+          model: Invoice,
+          include: Order,
+        },
+        { model: MsgPost, include: MsgReceived },
         {
           model: Product,
           as: 'user_favorites',

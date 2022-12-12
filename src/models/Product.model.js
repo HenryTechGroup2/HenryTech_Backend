@@ -197,7 +197,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_motherboard_consumption: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_motherboard_integrated_processor: {
@@ -205,7 +205,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_motherboard_type_ram: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_motherboard_ports_ram: {
@@ -213,7 +213,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_motherboard_audio_board: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
 
@@ -267,19 +267,19 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_keyboard_width: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_keyboard_higth: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_keyboard_deep: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_keyboard_weight: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_keyboard_wrist_rest: {
@@ -295,7 +295,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_keyboard_cable_length: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_keyboard_rgb: {
@@ -336,7 +336,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_earphone_usb_powered: {
-      type: DataTypes.STRING,
+      type: DataTypes.BOOLEAN,
       allowNull: true,
     },
     product_earphone_speaker_diameter: {
@@ -347,28 +347,24 @@ const Product = sequelize.define(
       type: DataTypes.STRING,
       allowNull: true,
     },
-    product_earphone_: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
     product_earphone_dock_includes: {
       type: DataTypes.BOOLEAN,
       allowNull: true,
     },
     product_earphone_impedance: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_earphone_min_frequency: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_earphone_max_frequency: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_earphone_sensitivity: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_earphone_surround: {
@@ -376,15 +372,15 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_earphone_microphone_min_frequency: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_earphone_microphone_max_frequency: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_earphone_microphone_sensitivity: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_earphone_microphone_noise_canceling: {
@@ -442,18 +438,14 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_mouse_frequency: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_mouse_max_speed: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_mouse_max_accleration: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-    },
-    product_mouse_processor: {
       type: DataTypes.STRING,
       allowNull: true,
     },
@@ -462,7 +454,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_mouse_weight: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_mouse_dumbbells_incluyed: {
@@ -478,15 +470,15 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_mouse_width: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_mouse_higth: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_mouse_deep: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_mouse_cable_type: {
@@ -494,7 +486,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_mouse_cable_length: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_mouse_cable_removable: {
@@ -510,7 +502,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_mouse_rechargeable_base: {
-      type: DataTypes.STRING,
+      type: DataTypes.BOOLEAN,
       allowNull: true,
     },
     product_mouse_rgb: {
@@ -527,7 +519,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_disk_consumption: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_disk_type: {
@@ -535,36 +527,36 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_disk_cache_memory: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_disk_rotation_speed: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_disk_interface_speed: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_disk_sequential_read_speed: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_disk_sequential_write_speed: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_disk_capacity: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     // CARACTERISTICAS RAM
     product_ram_capacity: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_ram_speed: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_ram_type: {
@@ -576,11 +568,11 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_ram_latency: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_ram_voltage: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     // CARACTERISTICAS DISPLAY
@@ -637,23 +629,23 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_display_width: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_display_heigth: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_display_thickness: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_display_curvature: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_display_maximum_consumption: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_display_font_type: {
@@ -661,11 +653,11 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_display_inches: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_display_visible_inches: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_display_maximum_resolution: {
@@ -673,7 +665,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_display_maximum_frequency: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_display_touch_screen: {
@@ -693,7 +685,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_display_weight_without_base: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_display_remote_control: {
@@ -706,11 +698,11 @@ const Product = sequelize.define(
     },
     // CARACTERISTICAS FUENTES DE PODER
     product_power_sources_watts_nominal: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_power_sources_real_watts: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_power_sources_format: {
@@ -734,7 +726,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_power_sources_line_amps_12V: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_power_sources_digital_source: {
@@ -791,7 +783,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_webcam_camera_image_resolution: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_webcam_functions: {
@@ -799,7 +791,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_webcam_max_frames_per_second: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_webcam_accessories_included: {
@@ -807,34 +799,27 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_webcam_cable_length: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_webcam_depth: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_webcam_width: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_webcam_heigth: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_webcam_weigth: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     // CARACTERISTICAS MICROPHONE
-    product_microphone_brand: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    product_microphone_model: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
+   
     product_microphone_color: {
       type: DataTypes.STRING,
       allowNull: true,
@@ -873,19 +858,19 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_cooler_maximum_speed: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_cooler_size: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_cooler_thickness: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_cooler_consumption: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_cooler_speed_controller: {
@@ -909,20 +894,12 @@ const Product = sequelize.define(
       allowNull: true,
     },
     // CARACTERISTICAS CONSOLAS
-    product_console_brand: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    product_console_model: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
     product_console_color: {
       type: DataTypes.STRING,
       allowNull: true,
     },
     product_console_capacity: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_console_memory_types: {
@@ -930,7 +907,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_console_ram_memory: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_console_with_wifi: {
@@ -950,23 +927,23 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_console_weigth: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_console_heigth: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_console_width: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_console_depth: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_console_max_amount_of_fps: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_console_accessories_included: {
@@ -990,7 +967,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_console_processor_speed: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_console_number_of_cpu_cores: {
@@ -1039,7 +1016,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_notebook_gpu_memory: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_notebook_fingerprint_reader: {
@@ -1091,23 +1068,23 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_notebook_weigth: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_notebook_width: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_notebook_depth: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_notebook_heigth: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_notebook_solid_capacity: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_notebook_memory_reader: {
@@ -1115,7 +1092,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_notebook_screen_size: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_notebook_display_type: {
@@ -1131,7 +1108,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_notebook_update_frecuency: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_notebook_reader: {
@@ -1163,11 +1140,11 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_notebook_ram_in_slot_1: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_notebook_ram_in_slot_2: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_notebook_memory_generation: {
@@ -1183,10 +1160,6 @@ const Product = sequelize.define(
       type: DataTypes.STRING,
       allowNull: true,
     },
-    product_gpu_gpu_chipset: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
     product_gpu_video_imput: {
       type: DataTypes.BOOLEAN,
       allowNull: true,
@@ -1197,10 +1170,6 @@ const Product = sequelize.define(
     },
     product_gpu_double_bridge: {
       type: DataTypes.BOOLEAN,
-      allowNull: true,
-    },
-    product_gpu_special_features: {
-      type: DataTypes.STRING,
       allowNull: true,
     },
     product_gpu_vga: {
@@ -1224,11 +1193,11 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_gpu_plate_width: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_gpu_plate_length: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_gpu_plate_thickness: {
@@ -1240,7 +1209,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_gpu_consuption: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_gpu_8_pin_pcie_quantity: {
@@ -1248,7 +1217,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_gpu_recomended_total_watts: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_gpu_backplate: {
@@ -1264,7 +1233,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_gpu_memory_speed: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_gpu_memory_type: {
@@ -1272,15 +1241,15 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_gpu_memory_capacity: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_gpu_memory_interface: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_gpu_core_turbo_speed: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_gpu_process_types: {
@@ -1329,15 +1298,15 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_cabinet_width: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_cabinet_heigth: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_cabinet_depth: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_cabinet_5_25_drives_supported: {
@@ -1423,6 +1392,10 @@ const Product = sequelize.define(
     product_img: {
       type: DataTypes.TEXT,
       allowNull: false,
+    },
+    product_suspense: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
     },
     product_array_img: {
       type: DataTypes.ARRAY(DataTypes.TEXT),
