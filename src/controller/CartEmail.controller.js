@@ -1,4 +1,5 @@
 import nodemailer from 'nodemailer';
+const { NODEMAILER_USER, NODEMAILER_PASS } = process.env;
 export const postCartEmail = async (req, res) => {
   const { user_email, user_name } = req.body;
   const transporter = nodemailer.createTransport({
@@ -6,12 +7,12 @@ export const postCartEmail = async (req, res) => {
     port: 465,
     secure: true,
     auth: {
-      user: 'pateypazhuari@gmail.com',
-      pass: 'nmsxuqnfheiwvygu',
+      user: NODEMAILER_USER,
+      pass: NODEMAILER_PASS,
     },
   });
   const mailOptions = {
-    from: 'pateypazhuari@gmail.com',
+    from: NODEMAILER_USER,
     to: `${user_email}`,
     subject: 'Bienvenido a HenryTech!',
     html: `
