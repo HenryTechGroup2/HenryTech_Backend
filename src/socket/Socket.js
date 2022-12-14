@@ -4,13 +4,16 @@ import http from 'http';
 import Review from '../models/Review.model.js';
 import Product from '../models/Product.model.js';
 import { MsgPost, MsgReceived } from '../models/Message.model.js';
-const api = 'https://henry-tech-app.vercel.app';
-// const api = 'http://localhost:3000'
+const api = 'https://henry-front-tech.vercel.app';
+// const api = 'http://localhost:3000';
 export const server = http.createServer(app);
 const io = new SocketServer(server, {
   cors: {
-    origin: api,
+    origin: '*',
+    methods: ['GET', 'POST'],
+    transports: ['polling', 'websocket'],
   },
+  allowEIO3: true,
 });
 
 export const socketEvents = () => {

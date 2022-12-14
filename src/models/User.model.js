@@ -31,7 +31,7 @@ const User = sequelize.define(
       type: DataTypes.BIGINT,
     },
     user_payment_method: {
-      type: DataTypes.ENUM('stripe'),
+      type: DataTypes.STRING,
     },
     user_shipping_address: {
       type: DataTypes.STRING,

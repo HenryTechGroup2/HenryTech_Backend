@@ -5,7 +5,7 @@ import Product from './src/models/Product.model.js';
 import User from './src/models/User.model.js';
 import Review from './src/models/Review.model.js';
 import Stock from './src/models/Stock.model.js';
-import { Product_Order } from './src/models/Associations.model.js';
+import './src/models/Associations.model.js';
 import sequelize from './src/db.js';
 import { Server } from 'socket.io';
 import {
@@ -16,14 +16,16 @@ import { server, socketEvents } from './src/socket/Socket.js';
 import axios from 'axios';
 import productsFeaturesSetter from './data/dataFeatures.js';
 
-const port = 3001;
+const port = process.env.PORT || 3001;
+// const api = 'https://henry-tech-app.vercel.app';
+const api = 'http://localhost:3001';
 
 async function DB_StartingData() {
   try {
     const users = await User.findAll();
     if (users.length === 0) {
       userInitialData.forEach(async (user) => {
-        await axios.post('http://localhost:3001/api/user/', user);
+        await axios.post(`${api}/api/user/`, user);
       });
       console.log('initial users created successfully');
     }
@@ -33,7 +35,7 @@ async function DB_StartingData() {
       const productInitialDataWithFeatures =
         productsFeaturesSetter(productInitialData);
       productInitialDataWithFeatures.forEach(async (product) => {
-        await axios.post('http://localhost:3001/api/product/', product);
+        await axios.post(`${api}/api/product/`, product);
       });
       console.log('initial products created successfully');
     }
@@ -41,16 +43,15 @@ async function DB_StartingData() {
     console.log(error.message);
   }
 }
-
 async function main() {
   try {
-    await sequelize.sync({ force: true });
+    await sequelize.sync({ force: false });
     server.listen(port);
     console.log(`listening on port ${port}`);
     await DB_StartingData();
     socketEvents();
   } catch (e) {
-    console.log('error', e);
+    console.log('error', e.message);
   }
 }
 
