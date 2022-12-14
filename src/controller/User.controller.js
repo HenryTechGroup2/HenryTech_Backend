@@ -103,7 +103,6 @@ export const putUser = async (req, res) => {
     user_shipping_address,
   } = req.body;
   const user_isAdmin = false;
-  console.log(user_password_confirm);
   try {
     const user = await User.findByPk(id);
     if (!(await bcrypt.compare(user_password, user.user_password))) {
@@ -113,9 +112,26 @@ export const putUser = async (req, res) => {
     if (user_payment_method !== 'stripe') {
       throw new Error('Metodo de pago incorrecto');
     }
-    console.log(user);
+    if (user_password_confirm === '') {
+      await user.update(
+        {
+          user_email,
+          user_name,
+          user_phone,
+          user_payment_method,
+          user_shipping_address,
+          user_isAdmin,
+        },
+        {
+          where: {
+            user_id: Number(id),
+          },
+        }
+      );
+      console.log(user);
+      return res.status(200).json({ msg: 'Datos actualizados correctamente' });
+    }
     const newPassword = await bcrypt.hash(user_password_confirm, 10);
-    console.log(newPassword);
     await user.update(
       {
         user_email,
@@ -132,8 +148,9 @@ export const putUser = async (req, res) => {
         },
       }
     );
-    console.log('usuarios');
-    res.status(200).json({ msg: 'Datos actualizados correcta' });
+    res
+      .status(200)
+      .json({ msg: 'Datos actualizados correctamente  y contraseña cambiada' });
   } catch (error) {
     res.status(401).json({ msg: error.message });
   }
@@ -194,8 +211,16 @@ export const postUser = async (req, res) => {
       user_shipping_address,
       user_isAdmin,
     });
+    await MsgPost.create({
+      msgpost_post: '',
+      userUserId: newUser.user_id,
+    });
+    const USER = await User.findByPk(newUser.user_id, {
+      include: [{ model: MsgPost, include: MsgReceived }],
+    });
+
     res.status(200).json({
-      user: newUser,
+      user: USER,
       complete: 'User is created succesfully',
       password,
     });
@@ -229,6 +254,10 @@ export const loginUserAuth0 = async (req, res) => {
           include: Order,
         },
         {
+          model: MsgPost,
+          include: MsgReceived,
+        },
+        {
           model: Product,
           as: 'user_favorites',
           include: Stock,
@@ -248,18 +277,47 @@ export const loginUserAuth0 = async (req, res) => {
     if (userExist) {
       return res.status(201).json(userExist);
     }
-    const user = await User.create({
+    const newUser = await User.create({
       user_email,
       user_name,
       user_isAdmin: false,
-      user_password: 'Auth0AutenticatePassword',
+      user_password: 'Password',
     });
-    res.json(user);
+    await MsgPost.create({
+      msgpost_post: '',
+      userUserId: newUser.user_id,
+    });
+    const USER = await User.findByPk(newUser.user_id, {
+      include: [{ model: MsgPost, include: MsgReceived }],
+    });
+
+    res.status(200).json({
+      user: USER,
+      complete: 'User is created succesfully',
+      password,
+    });
   } catch (error) {
     res.status(500).json({ msg: error.message });
   }
 };
-
+export const createPasswordAuth0 = async (req, res) => {
+  const { user_password, user_id } = req.body;
+  console.log(user_password, user_id);
+  const newPasswod = bcrypt.hash(user_password, 10);
+  try {
+    await User.update(
+      { user_password: newPasswod },
+      {
+        where: {
+          user_id,
+        },
+      }
+    );
+    res.json({ message: 'Contraseña establecida correctamente' });
+  } catch (error) {
+    res.status(401).json({ msg: error.message });
+  }
+};
 export const loginUser = async (req, res) => {
   const { user_email, user_password } = req.body;
   try {
@@ -289,6 +347,11 @@ export const loginUser = async (req, res) => {
         },
       ],
     });
+    if (user.user_suspense) {
+      return res.status(202).json({
+        message: 'Su cuenta esta suspendida por el momento',
+      });
+    }
     if (!user) throw new Error('Usuario o contraseña incorrecta');
     //Comparamos las contraseñas deshasheandolas
     if (await bcrypt.compare(user_password, user.user_password)) {

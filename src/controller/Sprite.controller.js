@@ -9,7 +9,7 @@ import axios from 'axios';
 
 export const postStripe = async (req, res) => {
   const { id, amount, userid } = req.body;
-
+  console.log(userid);
   const amountTotal = amount.reduce(
     (a, b) => a + b.product_price * b.product_count,
     0

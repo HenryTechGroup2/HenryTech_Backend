@@ -109,7 +109,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_motherboard_platform: {
-      type: DataTypes.ENUM('AMD', 'Intel'),
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_motherboard_ports_pcie_16x: {
@@ -177,7 +177,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_motherboard_factor: {
-      type: DataTypes.ENUM('M-ATX', 'ATX', 'ITX', 'E-ATX'),
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_motherboard_max_watts_cpu: {
@@ -304,7 +304,7 @@ const Product = sequelize.define(
     },
     // CARACTERISTICAS AURICULARES
     product_earphone_audio: {
-      type: DataTypes.ENUM('2.0', '1', '2', '7.1'),
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_earphone_colour: {
@@ -312,7 +312,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_earphone_conecction: {
-      type: DataTypes.ENUM('Cableado', 'Inalámbrico'),
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_earphone_microphone_includes: {
@@ -340,7 +340,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_earphone_speaker_diameter: {
-      type: DataTypes.ENUM('20', '30', '32', '53', '40', '50'),
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_earphone_compatibility: {
@@ -388,16 +388,11 @@ const Product = sequelize.define(
       allowNull: true,
     },
     product_earphone_microphone_type: {
-      type: DataTypes.ENUM('Desmontable', 'Retráctil', 'Integrado'),
+      type: DataTypes.STRING,
       allowNull: true,
     },
     product_earphone_microphone_capture_type: {
-      type: DataTypes.ENUM(
-        'Unidireccional',
-        'Omnidireccional',
-        'No especificado',
-        'Bidireccional'
-      ),
+      type: DataTypes.STRING,
       allowNull: true,
     },
     // CARACTERISTICAS MOUSES
@@ -819,7 +814,7 @@ const Product = sequelize.define(
       allowNull: true,
     },
     // CARACTERISTICAS MICROPHONE
-   
+
     product_microphone_color: {
       type: DataTypes.STRING,
       allowNull: true,

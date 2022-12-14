@@ -1,7 +1,11 @@
 import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
+dotenv.config();
 const { NODEMAILER_USER, NODEMAILER_PASS } = process.env;
+
 export const postCartEmail = async (req, res) => {
   const { user_email, user_name } = req.body;
+  console.log(user_email, user_name);
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
