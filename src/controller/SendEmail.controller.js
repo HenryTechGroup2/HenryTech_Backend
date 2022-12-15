@@ -6,7 +6,7 @@ export const postSendEmail = async (req, res) => {
   const { user_email, user_name } = req.body;
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
-    port: 465,
+    port: 2525,
     secure: true,
     auth: {
       user: NODEMAILER_USER,

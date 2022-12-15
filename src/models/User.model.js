@@ -24,7 +24,7 @@ const User = sequelize.define(
       defaultValue: false,
     },
     user_password: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
     },
     user_phone: {

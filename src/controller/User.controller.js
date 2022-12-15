@@ -303,16 +303,11 @@ export const loginUserAuth0 = async (req, res) => {
 export const createPasswordAuth0 = async (req, res) => {
   const { user_password, user_id } = req.body;
   console.log(user_password, user_id);
-  const newPasswod = bcrypt.hash(user_password, 10);
+  const newPasswod = await bcrypt.hash(user_password, 10);
+  console.log(newPasswod);
   try {
-    await User.update(
-      { user_password: newPasswod },
-      {
-        where: {
-          user_id,
-        },
-      }
-    );
+    const userExist = await User.findByPk(user_id);
+    userExist.update({ user_password: newPasswod });
     res.json({ message: 'Contraseña establecida correctamente' });
   } catch (error) {
     res.status(401).json({ msg: error.message });
