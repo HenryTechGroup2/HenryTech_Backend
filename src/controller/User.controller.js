@@ -81,6 +81,7 @@ export const getUser = async (req, res) => {
             'product_rating',
             'product_img',
             'product_stock_id',
+            'product_ofer',
           ],
         },
       ],
@@ -269,6 +270,7 @@ export const loginUserAuth0 = async (req, res) => {
             'product_rating',
             'product_img',
             'product_stock_id',
+            'product_ofer',
           ],
         },
       ],
@@ -303,11 +305,16 @@ export const loginUserAuth0 = async (req, res) => {
 export const createPasswordAuth0 = async (req, res) => {
   const { user_password, user_id } = req.body;
   console.log(user_password, user_id);
-  const newPasswod = await bcrypt.hash(user_password, 10);
-  console.log(newPasswod);
+  const newPasswod = bcrypt.hash(user_password, 10);
   try {
-    const userExist = await User.findByPk(user_id);
-    userExist.update({ user_password: newPasswod });
+    await User.update(
+      { user_password: newPasswod },
+      {
+        where: {
+          user_id,
+        },
+      }
+    );
     res.json({ message: 'Contraseña establecida correctamente' });
   } catch (error) {
     res.status(401).json({ msg: error.message });
@@ -338,6 +345,7 @@ export const loginUser = async (req, res) => {
             'product_rating',
             'product_img',
             'product_stock_id',
+            'product_ofer',
           ],
         },
       ],
