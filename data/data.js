@@ -1648,7 +1648,7 @@ export const user = [
     user_name: 'Huari',
     user_email: 'hghghghghgh@gmail.com',
     user_password: '12345678',
-    user_phone: '3543657596',
+    user_phone: '123456789',
     user_payment_method: 'stripe',
     user_shipping_address: 'Quebrachitos, 43',
     user_isAdmin: true,
