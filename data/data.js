@@ -1646,7 +1646,7 @@ export const user = [
   },
   {
     user_name: 'Huari',
-    user_email: 'pateypazhuari@gmail.com',
+    user_email: 'hghghghghgh@gmail.com',
     user_password: '12345678',
     user_phone: '3543657596',
     user_payment_method: 'stripe',
